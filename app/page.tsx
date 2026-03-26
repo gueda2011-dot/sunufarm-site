@@ -4,7 +4,8 @@ import Value from "@/components/marketing/Value";
 import Audience from "@/components/marketing/Audience";
 import Pricing from "@/components/marketing/Pricing";
 import FAQ from "@/components/marketing/FAQ";
-import CTA from "@/components/marketing/CTA";
+import Download from "@/components/marketing/Download";
+import Contact from "@/components/marketing/Contact";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Audience />
       <Pricing />
       <FAQ />
-      <CTA />
+      <Download />
+      <Contact />
     </main>
   );
 }

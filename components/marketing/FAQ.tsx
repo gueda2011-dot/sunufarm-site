@@ -4,34 +4,39 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "À qui s'adresse SunuFarm ?",
+    question: "A qui s'adresse SunuFarm ?",
     answer:
-      "SunuFarm s'adresse aux éleveurs avicoles de toutes tailles, des petites fermes aux entreprises multi-sites. Si vous gérez des poulets de chair, des pondeuses ou tout autre volaille, SunuFarm peut vous aider.",
+      "SunuFarm s'adresse aux eleveurs avicoles, aux fermes en croissance et aux entreprises multi-sites. L'objectif reste le meme : mieux suivre les lots, controler les depenses et decider avec des chiffres fiables.",
   },
   {
-    question: "Est-ce adapté aux petites fermes ?",
+    question: "L'IA de SunuFarm, c'est quoi exactement ?",
     answer:
-      "Oui. Le plan Basic est conçu pour les petits éleveurs qui souhaitent commencer à organiser leur activité sans prise de tête. L'application est simple à utiliser, même sans expérience technique.",
+      "Ce n'est pas un chatbot. L'IA sert a analyser les donnees d'un lot pour faire ressortir les risques, la rentabilite probable et des recommandations concretes. Elle vous aide a decider plus vite et plus clairement.",
+  },
+  {
+    question: "L'IA est-elle disponible dans tous les plans ?",
+    answer:
+      "Non. Basic n'inclut pas d'IA. Le plan Pro inclut l'analyse IA des lots avec des recommandations standards et des quotas limites. Le plan Business va plus loin avec des insights plus pousses, des comparaisons plus profondes et un traitement prioritaire. L'essai donne seulement quelques analyses.",
+  },
+  {
+    question: "Le plan Pro est-il le meilleur choix pour une ferme en croissance ?",
+    answer:
+      "Oui, dans la plupart des cas. Pro est le plan recommande pour les elevages qui veulent piloter la rentabilite, reduire les pertes et commencer a utiliser l'analyse IA des lots sans passer tout de suite a une organisation multi-sites.",
+  },
+  {
+    question: "Quand faut-il passer au plan Business ?",
+    answer:
+      "Le plan Business est pense pour les grosses fermes, les entreprises et les exploitations qui pilotent plusieurs operations. Si vous devez comparer plusieurs sites, encadrer des equipes ou aller plus loin dans l'analyse, Business devient plus adapte.",
   },
   {
     question: "Puis-je changer d'abonnement ?",
     answer:
-      "Oui, vous pouvez passer d'un plan à l'autre à tout moment. Commencez avec ce qui vous convient, et évoluez quand vous êtes prêt.",
+      "Oui. Vous pouvez evoluer de Basic a Pro, puis vers Business selon vos besoins. Cela permet de commencer simplement et d'ajouter plus d'analyse et de controle a mesure que l'exploitation se structure.",
   },
   {
-    question: "Le plan Pro est-il suffisant pour une ferme en croissance ?",
+    question: "Faut-il telecharger une application ?",
     answer:
-      "Oui. Le Pro vous donne accès aux bilans de rentabilité, aux alertes et aux rapports — tout ce qu'il faut pour piloter votre croissance. Si vous dépassez un seul site ou avez besoin de gérer des équipes, le Business prend le relais.",
-  },
-  {
-    question: "Le plan Business convient-il à plusieurs fermes ?",
-    answer:
-      "Absolument. Le Business est conçu pour les exploitations multi-sites. Vous centralisez tout, comparez les performances par site, et gardez le contrôle depuis un seul tableau de bord.",
-  },
-  {
-    question: "Est-ce facile à prendre en main ?",
-    answer:
-      "SunuFarm est conçu pour être utilisé sur mobile, par des éleveurs qui n'ont pas le temps de se former des heures. L'interface est simple, directe, et vous guide pas à pas.",
+      "Aujourd'hui, SunuFarm fonctionne comme application web, accessible depuis un navigateur sur ordinateur ou telephone. Une installation mobile ou desktop pourra arriver plus tard, mais elle n'est pas necessaire pour utiliser la plateforme maintenant.",
   },
 ];
 
@@ -42,16 +47,18 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-gray-100">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center justify-between py-5 text-left gap-4"
+        className="flex w-full items-center justify-between gap-4 py-5 text-left"
       >
         <span className="font-semibold text-gray-900">{question}</span>
-        <span className={`flex-shrink-0 text-green-700 text-lg transition-transform duration-200 ${open ? "rotate-45" : ""}`}>
+        <span
+          className={`flex-shrink-0 text-lg text-green-700 transition-transform duration-200 ${
+            open ? "rotate-45" : ""
+          }`}
+        >
           +
         </span>
       </button>
-      {open && (
-        <p className="pb-5 text-sm text-gray-500 leading-relaxed">{answer}</p>
-      )}
+      {open && <p className="pb-5 text-sm leading-relaxed text-gray-500">{answer}</p>}
     </div>
   );
 }
@@ -60,9 +67,9 @@ export default function FAQ() {
   return (
     <section id="faq" className="bg-white px-5 py-14 md:py-20">
       <div className="mx-auto max-w-3xl">
-        <div className="text-center mb-10">
+        <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Questions fréquentes
+            Questions frequentes
           </h2>
         </div>
 

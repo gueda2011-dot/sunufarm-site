@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SunuFarm — Gestion avicole simplifiée",
+  title: "SunuFarm - Pilotage avicole et rentabilite",
   description:
-    "SunuFarm vous aide à réduire les pertes, suivre vos dépenses et piloter la rentabilité de votre élevage avicole.",
+    "SunuFarm aide les eleveurs et entreprises avicoles a reduire les pertes, controler les depenses, analyser la rentabilite des lots et mieux decider.",
 };
 
 export default function RootLayout({
@@ -30,11 +30,11 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-          <Navbar />
-          {children}
-          <Footer />
-        </body>
+      <body className="flex min-h-full flex-col">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
