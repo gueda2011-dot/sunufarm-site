@@ -16,6 +16,9 @@ export async function submitContact(
 ): Promise<FormState> {
   const name = String(formData.get('name') ?? '').trim()
   const email = String(formData.get('email') ?? '').trim()
+  const phone = String(formData.get('phone') ?? '').trim()
+  const role = String(formData.get('role') ?? '').trim()
+  const farmSize = String(formData.get('farmSize') ?? '').trim()
   const message = String(formData.get('message') ?? '').trim()
 
   if (!name || !email || !message) {
@@ -26,12 +29,19 @@ export async function submitContact(
     await resend.emails.send({
       from: 'SunuFarm <noreply@sunufarm.com>',
       to: TO_EMAIL,
-      subject: `Nouveau message de ${name}`,
-      text: `Nom : ${name}\nEmail : ${email}\n\n${message}`,
+      subject: `Nouvelle demande de demo - ${name}`,
+      text: `Nom : ${name}\nEmail : ${email}\nTelephone : ${phone || 'Non renseigne'}\nProfil : ${role || 'Non renseigne'}\nTaille de l'exploitation : ${farmSize || 'Non renseigne'}\n\nBesoin :\n${message}`,
     })
-    return { success: true, message: 'Message envoyé ! Nous vous répondrons rapidement.' }
+
+    return {
+      success: true,
+      message: 'Demande envoyee ! Nous vous repondrons rapidement.',
+    }
   } catch {
-    return { success: false, message: 'Une erreur est survenue. Réessayez ou contactez-nous directement.' }
+    return {
+      success: false,
+      message: 'Une erreur est survenue. Reessayez ou contactez-nous directement.',
+    }
   }
 }
 
@@ -52,8 +62,12 @@ export async function submitWaitlist(
       subject: `Nouvelle inscription liste d'attente`,
       text: `Email : ${email}`,
     })
-    return { success: true, message: 'Inscription confirmée ! Vous serez notifié à la sortie de l\'app.' }
+
+    return {
+      success: true,
+      message: "Inscription confirmee ! Vous serez notifie a la sortie de l'app.",
+    }
   } catch {
-    return { success: false, message: 'Une erreur est survenue. Réessayez.' }
+    return { success: false, message: 'Une erreur est survenue. Reessayez.' }
   }
 }
