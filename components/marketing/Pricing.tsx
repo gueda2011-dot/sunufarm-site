@@ -2,36 +2,36 @@ const plans = [
   {
     name: "Basic",
     price: "5 000",
-    tagline: "Commencez a suivre et organiser votre elevage",
+    tagline: "Posez une base propre pour votre exploitation",
     description:
-      "Pour les eleveurs qui veulent sortir du pilotage approximatif et structurer leurs informations de terrain.",
+      "Pour les exploitations qui veulent sortir de la gestion approximative et centraliser les donnees essentielles.",
     features: [
-      "Suivi des lots et mortalites",
-      "Enregistrement des depenses",
-      "Historique des cycles",
-      "Acces web sur mobile et ordinateur",
+      "Fermes, batiments et lots",
+      "Saisie quotidienne de base",
+      "Achats, ventes et depenses essentielles",
+      "Acces mobile et ordinateur",
+      "Historique d'exploitation",
       "Sans analyse IA",
     ],
     cta: "Commencer avec Basic",
     highlighted: false,
-    audience: "Pour demarrer simplement",
+    audience: "Pour demarrer proprement",
     aiLabel: "IA incluse : non",
   },
   {
     name: "Pro",
     price: "10 000",
-    tagline: "Pilotez la rentabilite et reduisez les pertes",
+    tagline: "Passez d'une gestion basique a un vrai pilotage",
     description:
-      "Pour les eleveurs serieux qui veulent decider avec des chiffres fiables et une analyse plus rapide des lots.",
+      "Pour les exploitations qui veulent suivre la performance, mieux arbitrer et aller plus loin dans l'analyse.",
     features: [
       "Tout ce qui est dans Basic",
-      "Bilan de rentabilite par lot",
+      "Rapports et tableaux de bord",
+      "Bilans de rentabilite par lot",
       "Analyse IA des lots",
       "Recommandations standards",
-      "Quotas d'analyse limites",
       "Alertes et indicateurs de performance",
-      "Rapports et tableaux de bord",
-      "Export des donnees",
+      "Exports de donnees",
     ],
     cta: "Choisir Pro",
     highlighted: true,
@@ -41,17 +41,16 @@ const plans = [
   {
     name: "Business",
     price: "25 000",
-    tagline: "Pilotez plusieurs operations avec plus de controle",
+    tagline: "Equipez une organisation plus exigeante",
     description:
-      "Pour les grosses fermes, entreprises et structures multi-sites qui veulent plus de profondeur d'analyse et de coordination.",
+      "Pour les structures qui veulent encadrer plusieurs utilisateurs, mieux organiser les acces et piloter avec plus de profondeur.",
     features: [
       "Tout ce qui est dans Pro",
-      "Gestion multi-sites",
       "Gestion des equipes et acces",
-      "Analyse IA des lots avec insights plus pousses",
-      "Comparaisons plus profondes entre lots et sites",
-      "Traitement prioritaire",
-      "Pilotage global et comparatif",
+      "Organisation plus adaptee aux operations multi-sites",
+      "Comparaisons plus profondes entre lots et exploitations",
+      "Analyse IA avec niveau avance",
+      "Pilotage plus global de l'activite",
       "Support prioritaire",
     ],
     cta: "Parler a l'equipe",
@@ -63,23 +62,22 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-white px-5 py-14 md:py-20">
+    <section id="pricing" className="bg-white px-5 py-14 dark:bg-[#07110c] md:py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Des offres claires selon votre niveau de pilotage
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
+            Des formules simples selon votre niveau d&apos;organisation
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-gray-500">
-            {`Commencez avec l'essentiel, passez a l'analyse metier quand vous voulez`}
-            {" "}
-            mieux comprendre vos pertes, puis gagnez en controle quand vos operations grandissent.
+          <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
+            Commencez avec l&apos;essentiel, ajoutez plus de pilotage et d&apos;analyse quand
+            l&apos;exploitation gagne en volume, en equipe et en exigence.
           </p>
         </div>
 
-        <div className="mb-8 rounded-3xl border border-amber-100 bg-amber-50 px-5 py-4 text-sm text-amber-900">
-          {`L'acces d'essai donne seulement quelques analyses IA. L'IA n'est pas incluse`}
-          {" "}
-          dans Basic, elle devient un vrai levier dans Pro et va plus loin dans Business.
+        <div className="mb-8 rounded-3xl border border-amber-100 bg-amber-50 px-5 py-4 text-sm text-amber-900 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-200">
+          L&apos;essai permet de decouvrir la plateforme. L&apos;IA n&apos;est pas la base du
+          produit : elle vient en complement dans Pro et Business pour enrichir
+          l&apos;analyse.
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -89,49 +87,49 @@ export default function Pricing() {
               className={`relative flex flex-col rounded-2xl border p-6 ${
                 plan.highlighted
                   ? "border-green-600 bg-green-700 text-white shadow-lg"
-                  : "border-gray-100 bg-white shadow-sm"
+                  : "border-gray-100 bg-white shadow-sm dark:border-white/10 dark:bg-[#101914] dark:shadow-none"
               }`}
             >
-              {plan.highlighted && (
+              {plan.highlighted ? (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-4 py-0.5 text-xs font-bold text-gray-900">
                   Recommandee
                 </span>
-              )}
+              ) : null}
 
               <div>
                 <p
                   className={`text-xs font-semibold uppercase tracking-[0.16em] ${
-                    plan.highlighted ? "text-green-200" : "text-gray-500"
+                    plan.highlighted ? "text-green-200" : "text-gray-500 dark:text-gray-400"
                   }`}
                 >
                   {plan.audience}
                 </p>
                 <p
                   className={`text-sm font-semibold uppercase tracking-wide ${
-                    plan.highlighted ? "text-green-200" : "text-green-700"
+                    plan.highlighted ? "text-green-200" : "text-green-700 dark:text-green-300"
                   }`}
                 >
                   {plan.name}
                 </p>
-                <p className={`mt-1 text-3xl font-bold ${plan.highlighted ? "text-white" : "text-gray-900"}`}>
+                <p className={`mt-1 text-3xl font-bold ${plan.highlighted ? "text-white" : "text-gray-900 dark:text-white"}`}>
                   {plan.price}{" "}
                   <span
                     className={`text-base font-normal ${
-                      plan.highlighted ? "text-green-200" : "text-gray-400"
+                      plan.highlighted ? "text-green-200" : "text-gray-400 dark:text-gray-500"
                     }`}
                   >
                     FCFA / mois
                   </span>
                 </p>
-                <p className={`mt-2 font-semibold ${plan.highlighted ? "text-white" : "text-gray-800"}`}>
+                <p className={`mt-2 font-semibold ${plan.highlighted ? "text-white" : "text-gray-800 dark:text-gray-100"}`}>
                   {plan.tagline}
                 </p>
-                <p className={`mt-1 text-sm ${plan.highlighted ? "text-green-100" : "text-gray-500"}`}>
+                <p className={`mt-1 text-sm ${plan.highlighted ? "text-green-100" : "text-gray-500 dark:text-gray-400"}`}>
                   {plan.description}
                 </p>
                 <div
                   className={`mt-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
-                    plan.highlighted ? "bg-white/15 text-white" : "bg-green-50 text-green-700"
+                    plan.highlighted ? "bg-white/15 text-white" : "bg-green-50 text-green-700 dark:bg-green-500/15 dark:text-green-300"
                   }`}
                 >
                   {plan.aiLabel}
@@ -143,7 +141,7 @@ export default function Pricing() {
                   <li
                     key={feature}
                     className={`flex items-start gap-2 text-sm ${
-                      plan.highlighted ? "text-green-100" : "text-gray-600"
+                      plan.highlighted ? "text-green-100" : "text-gray-600 dark:text-gray-300"
                     }`}
                   >
                     <span className={`mt-0.5 ${plan.highlighted ? "text-green-300" : "text-green-600"}`}>
@@ -159,7 +157,7 @@ export default function Pricing() {
                 className={`mt-6 block rounded-xl px-5 py-3 text-center text-sm font-semibold transition-colors ${
                   plan.highlighted
                     ? "bg-white text-green-700 hover:bg-green-50"
-                    : "border border-green-700 text-green-700 hover:bg-green-50"
+                    : "border border-green-700 text-green-700 hover:bg-green-50 dark:border-green-400 dark:text-green-300 dark:hover:bg-white/5"
                 }`}
               >
                 {plan.cta}

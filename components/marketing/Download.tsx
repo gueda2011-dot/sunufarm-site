@@ -10,22 +10,21 @@ export default function Download() {
   );
 
   return (
-    <section className="bg-gray-900 px-5 py-14 md:py-20">
+    <section className="bg-gray-900 px-5 py-14 dark:bg-[#020806] md:py-20">
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Accedez a SunuFarm sans attendre une installation
+            Accedez a SunuFarm sur mobile et ordinateur
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-400">
-            {`SunuFarm est deja disponible comme application web. Vous pouvez l'utiliser`}
-            {" "}
-            depuis un telephone ou un ordinateur via navigateur. Les formats installables
-            pourront venir plus tard, sans promesse prematuree.
+            SunuFarm est disponible sur navigateur et peut aussi etre installe
+            comme application sur les appareils compatibles, sans passer par un
+            developpement natif classique.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="flex flex-col rounded-2xl border border-gray-700 bg-gray-800 p-6">
+          <div className="flex flex-col rounded-2xl border border-gray-700 bg-gray-800 p-6 dark:border-white/10 dark:bg-[#0f1b15]">
             <div className="mb-4 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-700 text-xl font-semibold text-white">
                 W
@@ -38,47 +37,45 @@ export default function Download() {
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Accedez a SunuFarm depuis votre ordinateur ou votre telephone via
-              un navigateur. Aucune installation requise pour suivre vos lots,
-              vos couts et vos analyses.
+              Accedez a SunuFarm depuis votre ordinateur ou votre telephone sans
+              installation obligatoire. C&apos;est le moyen le plus rapide pour commencer.
             </p>
             <a
               href="https://app.sunufarm.com"
               className="mt-5 block rounded-xl bg-green-700 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-600"
             >
-              {`Acceder a l'application`}
+              Acceder a l&apos;application
             </a>
           </div>
 
-          <div className="flex flex-col rounded-2xl border border-gray-700 bg-gray-800 p-6">
+          <div className="flex flex-col rounded-2xl border border-gray-700 bg-gray-800 p-6 dark:border-white/10 dark:bg-[#0f1b15]">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-700 text-xl font-semibold text-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-700 text-xl font-semibold text-white dark:bg-white/10">
                 +
               </div>
               <div>
-                <p className="font-semibold text-white">Android, iOS et desktop</p>
-                <span className="rounded-full bg-gray-700 px-2 py-0.5 text-xs font-medium text-gray-300">
-                  Plus tard
+                <p className="font-semibold text-white">Installation PWA</p>
+                <span className="rounded-full bg-green-700 px-2 py-0.5 text-xs font-medium text-green-100">
+                  Disponible selon appareil
                 </span>
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              {`Si des versions installables arrivent, vous pourrez etre informe en`}
-              {" "}
-              {`priorite. En attendant, l'application web couvre deja l'usage quotidien.`}
+              Sur Android et sur certains appareils iOS, SunuFarm peut etre ajoute
+              a l&apos;ecran d&apos;accueil pour offrir une experience plus proche d&apos;une application.
             </p>
 
-            <div className="mb-4 mt-5 flex gap-2 opacity-50">
-              <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2">
+            <div className="mb-4 mt-5 flex gap-2">
+              <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2 dark:border-white/10 dark:bg-white/5">
                 <div>
-                  <p className="text-xs text-gray-400">Eventuellement sur</p>
-                  <p className="text-xs font-semibold text-white">Google Play</p>
+                  <p className="text-xs text-gray-400">Ajout rapide sur</p>
+                  <p className="text-xs font-semibold text-white">Android</p>
                 </div>
               </div>
-              <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2">
+              <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2 dark:border-white/10 dark:bg-white/5">
                 <div>
-                  <p className="text-xs text-gray-400">Eventuellement sur</p>
-                  <p className="text-xs font-semibold text-white">App Store</p>
+                  <p className="text-xs text-gray-400">Ajout a l&apos;ecran d&apos;accueil</p>
+                  <p className="text-xs font-semibold text-white">iPhone / iPad</p>
                 </div>
               </div>
             </div>
@@ -92,20 +89,20 @@ export default function Download() {
                   name="email"
                   required
                   placeholder="votre@email.com"
-                  className="flex-1 rounded-xl border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="flex-1 rounded-xl border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 dark:border-white/10 dark:bg-white/5"
                 />
                 <button
                   type="submit"
                   disabled={pending}
-                  className="whitespace-nowrap rounded-xl bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-500 disabled:opacity-60"
+                  className="whitespace-nowrap rounded-xl bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-500 disabled:opacity-60 dark:bg-white/10 dark:hover:bg-white/15"
                 >
-                  {pending ? "..." : "Me notifier"}
+                  {pending ? "..." : "Etre informe"}
                 </button>
               </form>
             )}
-            {state && !state.success && (
+            {state && !state.success ? (
               <p className="mt-1 text-xs text-red-400">{state.message}</p>
-            )}
+            ) : null}
           </div>
         </div>
       </div>

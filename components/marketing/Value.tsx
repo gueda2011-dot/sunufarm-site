@@ -1,87 +1,85 @@
 const values = [
   {
-    icon: "↗",
-    title: "Reduisez les pertes plus tot",
+    icon: "01",
+    title: "Structurez l'exploitation de la ferme au lot",
     description:
-      "Suivez les mortalites et la consommation en temps reel. Reperez les anomalies avant qu'elles ne deviennent des pertes difficiles a rattraper.",
+      "Organisez fermes, batiments, lots et historiques dans une meme application. Vous partez enfin d'une base claire et exploitable.",
   },
   {
-    icon: "F",
-    title: "Gardez le controle sur vos depenses",
+    icon: "02",
+    title: "Saisissez vite sur le terrain",
     description:
-      "Enregistrez chaque depense par lot. Sachez exactement ou part votre argent et ce qui peut etre optimise.",
+      "La saisie quotidienne, les achats et plusieurs formulaires sont penses pour le mobile, avec brouillons et reprise plus simple.",
   },
   {
-    icon: "%",
-    title: "Sachez rapidement si un lot est rentable",
+    icon: "03",
+    title: "Reliez operations et finances",
     description:
-      "A la cloture d'un lot, obtenez un bilan clair : couts, revenus, marge. Plus de flou, plus d'incertitude.",
+      "Achats, ventes, stock, fournisseurs, clients et charges restent relies a l'activite au lieu d'etre geres separement.",
   },
   {
-    icon: "IA",
-    title: "Analysez un lot en quelques secondes",
+    icon: "04",
+    title: "Pilotez avec des rapports utiles",
     description:
-      "L'IA de SunuFarm analyse les donnees du lot pour faire ressortir les signaux de risque, la rentabilite probable et les points a corriger.",
+      "Suivez les indicateurs, comparez les periodes et gardez une lecture plus nette de ce qui marche, de ce qui derape et de ce qu'il faut corriger.",
   },
   {
-    icon: "!",
-    title: "Recevez des recommandations utiles",
+    icon: "05",
+    title: "Travaillez en equipe avec les bons acces",
     description:
-      "Pas un chatbot. Une analyse metier qui vous aide a decider quoi verifier, quoi corriger et ou agir en priorite.",
+      "Le proprietaire garde la main, chaque membre voit les bons modules, et l'organisation reste plus propre quand l'equipe grandit.",
   },
   {
-    icon: "[]",
-    title: "Centralisez les donnees de terrain",
+    icon: "06",
+    title: "Ajoutez de l'analyse quand elle apporte vraiment",
     description:
-      "Fini les cahiers eparpilles. Vos lots, couts, alertes et historiques restent accessibles depuis la meme application.",
+      "L'IA de SunuFarm sert a analyser les lots et a faire ressortir des points d'attention concrets, sans remplacer le pilotage metier.",
   },
 ];
 
 export default function Value() {
   return (
-    <section id="value" className="bg-white px-5 py-14 md:py-20">
+    <section id="value" className="bg-white px-5 py-14 dark:bg-[#07110c] md:py-20">
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
             Ce que SunuFarm change pour vous
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-gray-500">
-            Pas une technologie de plus. Une facon plus claire de piloter{" "}
-            {`l'elevage, de corriger les pertes et d'ameliorer les decisions lot par lot.`}
+          <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
+            Une plateforme de gestion avicole vraiment exploitable au quotidien,
+            pas juste un tableau de bord de plus.
           </p>
         </div>
 
-        <div className="mb-8 rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-amber-50 p-6 md:p-8">
+        <div className="mb-8 rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-amber-50 p-6 dark:border-white/10 dark:from-[#0f1b15] dark:via-[#0d1712] dark:to-[#19160f] md:p-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700">
-              Intelligence metier SunuFarm
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
+              Produit complet
             </p>
-            <h3 className="mt-2 text-2xl font-bold text-gray-900">
-              {`L'IA aide a decider sur un lot, pas a discuter pour remplir un ecran.`}
+            <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white">
+              SunuFarm couvre deja le coeur du pilotage operationnel d&apos;une exploitation avicole.
             </h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600 md:text-base">
-              {`Elle lit les donnees deja saisies dans l'application, detecte les signaux`}
-              {" "}
-              faibles, met en evidence les ecarts qui menacent la marge et vous renvoie
-              {` des recommandations concretes. L'objectif est simple : agir plus tot et avec`}
-              {" "}
-              plus de confiance.
+            <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 md:text-base">
+              L&apos;application va bien au-dela du suivi des lots : elle integre aussi
+              la gestion des fermes, des batiments, des achats, des ventes, du
+              stock, des finances, des equipes, des acces et des rapports. L&apos;IA
+              vient en appui, comme une couche d&apos;analyse supplementaire.
             </p>
           </div>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {values.map((v) => (
+          {values.map((value) => (
             <div
-              key={v.title}
-              className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+              key={value.title}
+              className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-[#101914] dark:shadow-none"
             >
-              <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-green-50 text-sm font-bold text-green-700">
-                {v.icon}
+              <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-green-50 text-sm font-bold text-green-700 dark:bg-green-500/15 dark:text-green-300">
+                {value.icon}
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800">{v.title}</h3>
-                <p className="mt-1 text-sm text-gray-500">{v.description}</p>
+                <h3 className="font-semibold text-gray-800 dark:text-white">{value.title}</h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{value.description}</p>
               </div>
             </div>
           ))}

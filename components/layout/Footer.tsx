@@ -1,13 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 px-5 py-10 text-sm text-gray-400">
+    <footer className="bg-gray-900 px-5 py-10 text-sm text-gray-400 dark:border-t dark:border-white/10 dark:bg-[#020806]">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
         <div>
           <p className="text-base font-bold text-white">SunuFarm</p>
-          <p className="mt-1">Pilotage avicole pense pour le terrain et la rentabilite.</p>
+          <p className="mt-1">Gestion avicole mobile, claire et orientee terrain.</p>
         </div>
 
         <nav className="flex gap-6">
+          <a href="#problems" className="transition-colors hover:text-white">
+            Problemes
+          </a>
           <a href="#value" className="transition-colors hover:text-white">
             Valeur
           </a>
