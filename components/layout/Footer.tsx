@@ -1,9 +1,11 @@
+import BrandLogo from "./BrandLogo";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 px-5 py-10 text-sm text-gray-400 dark:border-t dark:border-white/10 dark:bg-[#020806]">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
         <div>
-          <p className="text-base font-bold text-white">SunuFarm</p>
+          <BrandLogo dark />
           <p className="mt-1">Gestion avicole mobile, claire et orientee terrain.</p>
         </div>
 
