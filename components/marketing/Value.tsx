@@ -1,39 +1,39 @@
 const values = [
   {
     icon: "01",
-    title: "Structurez l'exploitation de la ferme au lot",
+    title: "Sachez rapidement si un lot est rentable",
     description:
-      "Organisez fermes, batiments, lots et historiques dans une meme application. Vous partez enfin d'une base claire et exploitable.",
+      "Reliez lots, achats, ventes, charges et indicateurs pour voir plus clairement ce qui rapporte et ce qui doit etre corrige.",
   },
   {
     icon: "02",
-    title: "Saisissez vite sur le terrain",
+    title: "Detectez plus vite les problemes importants",
     description:
-      "La saisie quotidienne, les achats et plusieurs formulaires sont penses pour le mobile, avec brouillons et reprise plus simple.",
+      "La plateforme aide a reperer les ecarts sur la mortalite, la consommation, les traitements ou les couts avant qu'ils ne pesent trop lourd.",
   },
   {
     icon: "03",
-    title: "Reliez operations et finances",
+    title: "Decidez avec plus de confiance",
     description:
-      "Achats, ventes, stock, fournisseurs, clients et charges restent relies a l'activite au lieu d'etre geres separement.",
+      "Vous arbitrez mieux quand les informations terrain, les depenses et les resultats sont enfin lisibles au meme endroit.",
   },
   {
     icon: "04",
-    title: "Pilotez avec des rapports utiles",
+    title: "Centralisez les donnees utiles a l'exploitation",
     description:
-      "Suivez les indicateurs, comparez les periodes et gardez une lecture plus nette de ce qui marche, de ce qui derape et de ce qu'il faut corriger.",
+      "Fermes, batiments, lots, stock, ventes, fournisseurs et finances restent relies dans une meme base simple a exploiter.",
   },
   {
     icon: "05",
-    title: "Travaillez en equipe avec les bons acces",
+    title: "Travaillez mieux avec votre equipe",
     description:
-      "Le proprietaire garde la main, chaque membre voit les bons modules, et l'organisation reste plus propre quand l'equipe grandit.",
+      "Le proprietaire garde la main, les acces sont mieux organises et chacun voit ce qu'il doit saisir ou suivre.",
   },
   {
     icon: "06",
-    title: "Ajoutez de l'analyse quand elle apporte vraiment",
+    title: "Ajoutez de l'analyse quand elle aide vraiment",
     description:
-      "L'IA de SunuFarm sert a analyser les lots et a faire ressortir des points d'attention concrets, sans remplacer le pilotage metier.",
+      "L'IA de SunuFarm sert a faire ressortir des points d'attention concrets pour accelerer la lecture, pas pour compliquer le pilotage.",
   },
 ];
 
@@ -46,24 +46,23 @@ export default function Value() {
             Ce que SunuFarm change pour vous
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Une plateforme de gestion avicole vraiment exploitable au quotidien,
-            pas juste un tableau de bord de plus.
+            Des benefices concrets pour mieux piloter, mieux reagir et mieux lire
+            la performance de votre exploitation.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-amber-50 p-6 dark:border-white/10 dark:from-[#0f1b15] dark:via-[#0d1712] dark:to-[#19160f] md:p-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-              Produit complet
+              Pilotage plus clair
             </p>
             <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white">
-              SunuFarm couvre deja le coeur du pilotage operationnel d&apos;une exploitation avicole.
+              Moins de gestion dispersee, plus de visibilite sur ce qui compte vraiment.
             </h3>
             <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 md:text-base">
-              L&apos;application va bien au-dela du suivi des lots : elle integre aussi
-              la gestion des fermes, des batiments, des achats, des ventes, du
-              stock, des finances, des equipes, des acces et des rapports. L&apos;IA
-              vient en appui, comme une couche d&apos;analyse supplementaire.
+              SunuFarm ne sert pas seulement a saisir des donnees. La plateforme
+              vous aide a transformer vos informations terrain en decisions plus
+              rapides, plus fiables et plus utiles pour la rentabilite.
             </p>
           </div>
         </div>

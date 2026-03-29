@@ -14,12 +14,11 @@ export default function Download() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Accedez a SunuFarm sur mobile et ordinateur
+            Essayer SunuFarm
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-400">
-            SunuFarm est disponible sur navigateur et peut aussi etre installe
-            comme application sur les appareils compatibles, sans passer par un
-            developpement natif classique.
+            Commencez sur navigateur, installez l&apos;application si besoin, et avancez
+            a votre rythme vers une gestion plus claire de votre exploitation.
           </p>
         </div>
 
@@ -37,14 +36,14 @@ export default function Download() {
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Accedez a SunuFarm depuis votre ordinateur ou votre telephone sans
-              installation obligatoire. C&apos;est le moyen le plus rapide pour commencer.
+              Demarrez rapidement sur ordinateur ou telephone pour voir comment
+              SunuFarm peut vous aider a mieux suivre vos lots, vos chiffres et vos operations.
             </p>
             <a
               href="https://app.sunufarm.com"
               className="mt-5 block rounded-xl bg-green-700 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-600"
             >
-              Acceder a l&apos;application
+              Essayer l&apos;application
             </a>
           </div>
 
@@ -96,7 +95,7 @@ export default function Download() {
                   disabled={pending}
                   className="whitespace-nowrap rounded-xl bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-500 disabled:opacity-60 dark:bg-white/10 dark:hover:bg-white/15"
                 >
-                  {pending ? "..." : "Etre informe"}
+                  {pending ? "..." : "Demander une demo"}
                 </button>
               </form>
             )}

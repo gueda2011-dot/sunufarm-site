@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SunuFarm Site
 
-## Getting Started
+Site marketing de SunuFarm, une application de gestion avicole orientee terrain pour les eleveurs, responsables d'exploitation et structures avicoles.
 
-First, run the development server:
+Le site a deux objectifs principaux :
+
+- presenter clairement la proposition de valeur de SunuFarm ;
+- convertir les visiteurs en demandes de demonstration, prises de contact WhatsApp ou inscriptions.
+
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Resend pour l'envoi des formulaires
+
+## Sections du site
+
+La page d'accueil assemble les sections marketing suivantes :
+
+- `Hero`
+- `Screenshots`
+- `Problems`
+- `Value`
+- `Audience`
+- `Pricing`
+- `FAQ`
+- `Download`
+- `Contact`
+
+Le formulaire de contact et le formulaire de liste d'attente passent par des Server Actions dans `app/actions.ts`.
+
+Le site inclut aussi :
+
+- un CTA WhatsApp dans le hero ;
+- un bouton WhatsApp flottant ;
+- une section screenshots qui reconstitue plusieurs ecrans produit : dashboard, lots, sante, finances, rapports, ventes et clients.
+
+## Lancer le projet
+
+Installer les dependances :
+
+```bash
+npm install
+```
+
+Demarrer le serveur de developpement :
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Construire pour la production :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Lancer la version de production localement :
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Verifier le lint :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le site est ensuite accessible sur [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Variables d'environnement
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Copier `.env.local.example` vers `.env.local`, puis renseigner les valeurs :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+CONTACT_EMAIL=contact@sunufarm.com
+```
+
+Usage :
+
+- `RESEND_API_KEY` : cle API Resend utilisee pour envoyer les emails ;
+- `CONTACT_EMAIL` : adresse qui recoit les demandes de demo et les inscriptions.
+
+Sans configuration Resend valide, les formulaires ne pourront pas envoyer d'email.
+
+## WhatsApp
+
+Le lien WhatsApp utilise le numero configure dans `lib/whatsapp.ts` avec un message pre-rempli.
+
+- numero actuel : `+221 76 312 69 22`
+- message : `Bonjour, je souhaite en savoir plus sur SunuFarm et demander une demonstration.`
+
+## Structure utile
+
+```text
+app/
+  actions.ts        # Server Actions pour les formulaires
+  layout.tsx        # Layout global
+  page.tsx          # Composition de la page d'accueil
+  globals.css       # Styles globaux
+
+components/
+  layout/           # Navbar, footer, theme toggle, bouton WhatsApp flottant
+  marketing/        # Sections de la landing page et apercus produit
+
+lib/
+  whatsapp.ts       # lien WhatsApp et message pre-rempli
+
+docs/
+  marketing-direction.md   # intention marketing et positionnement du site
+
+public/             # assets statiques
+```
+
+## Parcours couverts
+
+- demande de demonstration depuis la section `Contact` ;
+- prise de contact directe via WhatsApp ;
+- inscription / demande de demo legere depuis la section `Download` ;
+- redirection vers l'application via `https://app.sunufarm.com`.
+
+## Positionnement de la landing
+
+La landing actuelle est pensee pour etre plus orientee conversion que le template initial :
+
+- hero axe sur les resultats : pertes, rentabilite, pilotage ;
+- problemes et valeur formules de maniere plus concrete et business ;
+- offre `Pro` mise en avant comme formule recommandee ;
+- preuves produit visuelles via une grande section screenshots inspiree des ecrans reels de l'application ;
+- marqueurs de credibilite : usage terrain, simplicite, adaptation a l'Afrique francophone.
+
+## Notes de contenu
+
+Le positionnement marketing du site est documente dans [docs/marketing-direction.md](./docs/marketing-direction.md). Le ton du site doit rester simple, concret, credible et oriente resultat plutot que liste brute de fonctionnalites.

@@ -1,27 +1,27 @@
 const problems = [
   {
     icon: "!",
-    title: "Des pertes difficiles a expliquer",
+    title: "Des pertes non visibles assez tot",
     description:
-      "Les mortalites augmentent, mais sans historique fiable il devient difficile de comprendre ce qui s'est passe et quand agir.",
-  },
-  {
-    icon: "F",
-    title: "Des depenses mal reliees a l'activite",
-    description:
-      "Aliments, medicaments, achats et charges s'accumulent sans vision claire sur ce qui pese vraiment sur la marge.",
+      "Mortalite, consommation, sante ou cout aliment derapent parfois sans signal clair, jusqu'a ce que la marge soit deja abimee.",
   },
   {
     icon: "%",
-    title: "Une rentabilite difficile a lire",
+    title: "Une rentabilite que l'on decouvre trop tard",
     description:
-      "En fin de lot ou de periode, il reste trop de zones floues pour savoir ce qui rapporte et ce qui fait perdre.",
+      "Sans lecture par lot ou par periode, il devient difficile de savoir ce qui rapporte vraiment et ce qui vous fait perdre.",
   },
   {
     icon: "[]",
-    title: "Des informations dispersees",
+    title: "Une gestion dispersee entre plusieurs supports",
     description:
-      "Les informations vivent dans des cahiers, des messages ou dans la tete des equipes. Elles sont donc difficiles a retrouver et a partager.",
+      "Cahiers, messages, feuilles Excel et memoire des equipes finissent par ralentir le suivi et faire perdre des informations utiles.",
+  },
+  {
+    icon: "F",
+    title: "Des decisions prises trop tard",
+    description:
+      "Quand les donnees arrivent en retard ou restent floues, il est plus dur d'agir vite sur un lot, un stock ou une depense.",
   },
   {
     icon: "+",
@@ -37,12 +37,12 @@ export default function Problems() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Vous vous reconnaissez dans ces situations ?
+            Les freins qui coutent cher a une exploitation avicole
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Ce sont les blocages les plus frequents sur le terrain. SunuFarm a
-            ete pense pour remettre de l&apos;ordre, de la visibilite et de la rigueur
-            dans le pilotage quotidien.
+            Quand les pertes, les couts et les informations restent flous, il
+            devient difficile de piloter sereinement. SunuFarm aide a remettre de
+            la visibilite la ou les decisions se jouent.
           </p>
         </div>
 

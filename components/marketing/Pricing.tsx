@@ -35,7 +35,7 @@ const plans = [
     ],
     cta: "Choisir Pro",
     highlighted: true,
-    audience: "Offre recommandee",
+    audience: "Plan le plus choisi",
     aiLabel: "IA incluse : oui, en quota maitrise",
   },
   {
@@ -86,14 +86,16 @@ export default function Pricing() {
               key={plan.name}
               className={`relative flex flex-col rounded-2xl border p-6 ${
                 plan.highlighted
-                  ? "border-green-600 bg-green-700 text-white shadow-lg"
+                  ? "border-green-500 bg-green-700 text-white shadow-xl ring-4 ring-green-200/70"
                   : "border-gray-100 bg-white shadow-sm dark:border-white/10 dark:bg-[#101914] dark:shadow-none"
               }`}
             >
               {plan.highlighted ? (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-4 py-0.5 text-xs font-bold text-gray-900">
-                  Recommandee
-                </span>
+                <div className="absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-amber-400 px-4 py-1 text-xs font-bold text-gray-900 shadow-sm">
+                  <span>Recommandee</span>
+                  <span className="h-1.5 w-1.5 rounded-full bg-gray-900" />
+                  <span>Pro</span>
+                </div>
               ) : null}
 
               <div>
