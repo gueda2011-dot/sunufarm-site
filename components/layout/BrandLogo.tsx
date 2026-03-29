@@ -7,25 +7,25 @@ type BrandLogoProps = {
 };
 
 export default function BrandLogo({ compact = false, dark = false }: BrandLogoProps) {
-  const frame = compact
-    ? "h-[52px] w-[170px]"
-    : "h-[62px] w-[200px]";
+  const iconSize = compact ? 40 : 48;
+  const textSize = compact ? "text-[2rem]" : "text-[2.2rem]";
 
   return (
-    <Link href="/" className="inline-flex items-center">
+    <Link href="/" className="inline-flex items-center gap-2.5">
+      <Image
+        src="/logo-sunufarm-icon.png"
+        alt="Icône SunuFarm"
+        width={iconSize}
+        height={iconSize}
+        className="h-auto w-auto rounded-md"
+        priority
+      />
       <span
-        className={`relative overflow-hidden ${frame} ${
-          dark ? "rounded-xl bg-white px-1 py-1" : ""
+        className={`${textSize} font-black italic leading-none tracking-tight ${
+          dark ? "text-white" : "text-[#241f23]"
         }`}
       >
-        <Image
-          src="/logo-sunufarm.png"
-          alt="SunuFarm"
-          fill
-          priority
-          sizes={compact ? "170px" : "200px"}
-          className="object-cover object-center scale-[1.9]"
-        />
+        SunuFarm
       </span>
     </Link>
   );
