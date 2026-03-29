@@ -29,18 +29,18 @@ export async function submitContact(
     await resend.emails.send({
       from: 'SunuFarm <noreply@sunufarm.com>',
       to: TO_EMAIL,
-      subject: `Nouvelle demande de demo - ${name}`,
-      text: `Nom : ${name}\nEmail : ${email}\nTelephone : ${phone || 'Non renseigne'}\nProfil : ${role || 'Non renseigne'}\nTaille de l'exploitation : ${farmSize || 'Non renseigne'}\n\nBesoin :\n${message}`,
+      subject: `Nouvelle demande de démo - ${name}`,
+      text: `Nom : ${name}\nEmail : ${email}\nTéléphone : ${phone || 'Non renseigné'}\nProfil : ${role || 'Non renseigné'}\nTaille de l'exploitation : ${farmSize || 'Non renseigné'}\n\nBesoin :\n${message}`,
     })
 
     return {
       success: true,
-      message: 'Demande envoyee ! Nous vous repondrons rapidement.',
+      message: 'Demande envoyée ! Nous vous répondrons rapidement.',
     }
   } catch {
     return {
       success: false,
-      message: 'Une erreur est survenue. Reessayez ou contactez-nous directement.',
+      message: 'Une erreur est survenue. Réessayez ou contactez-nous directement.',
     }
   }
 }
@@ -65,9 +65,9 @@ export async function submitWaitlist(
 
     return {
       success: true,
-      message: "Inscription confirmee ! Vous serez notifie a la sortie de l'app.",
-    }
+      message: "Inscription confirmée ! Vous serez notifié à la sortie de l'app.",
+  }
   } catch {
-    return { success: false, message: 'Une erreur est survenue. Reessayez.' }
+    return { success: false, message: 'Une erreur est survenue. Réessayez.' }
   }
 }

@@ -4,34 +4,34 @@ const plans = [
     price: "5 000",
     tagline: "Posez une base propre pour votre exploitation",
     description:
-      "Pour les exploitations qui veulent sortir de la gestion approximative et centraliser les donnees essentielles.",
+      "Pour les exploitations qui veulent sortir de la gestion approximative et centraliser les données essentielles.",
     features: [
-      "Fermes, batiments et lots",
+      "Fermes, bâtiments et lots",
       "Saisie quotidienne de base",
-      "Achats, ventes et depenses essentielles",
-      "Acces mobile et ordinateur",
+      "Achats, ventes et dépenses essentielles",
+      "Accès mobile et ordinateur",
       "Historique d'exploitation",
       "Sans analyse IA",
     ],
     cta: "Commencer avec Basic",
     highlighted: false,
-    audience: "Pour demarrer proprement",
+    audience: "Pour démarrer proprement",
     aiLabel: "IA incluse : non",
   },
   {
     name: "Pro",
     price: "10 000",
-    tagline: "Passez d'une gestion basique a un vrai pilotage",
+    tagline: "Passez d'une gestion basique à un vrai pilotage",
     description:
       "Pour les exploitations qui veulent suivre la performance, mieux arbitrer et aller plus loin dans l'analyse.",
     features: [
       "Tout ce qui est dans Basic",
       "Rapports et tableaux de bord",
-      "Bilans de rentabilite par lot",
+      "Bilans de rentabilité par lot",
       "Analyse IA des lots",
       "Recommandations standards",
       "Alertes et indicateurs de performance",
-      "Exports de donnees",
+      "Exports de données",
     ],
     cta: "Choisir Pro",
     highlighted: true,
@@ -43,20 +43,20 @@ const plans = [
     price: "25 000",
     tagline: "Equipez une organisation plus exigeante",
     description:
-      "Pour les structures qui veulent encadrer plusieurs utilisateurs, mieux organiser les acces et piloter avec plus de profondeur.",
+      "Pour les structures qui veulent encadrer plusieurs utilisateurs, mieux organiser les accès et piloter avec plus de profondeur.",
     features: [
       "Tout ce qui est dans Pro",
-      "Gestion des equipes et acces",
-      "Organisation plus adaptee aux operations multi-sites",
+      "Gestion des équipes et accès",
+      "Organisation plus adaptée aux opérations multi-sites",
       "Comparaisons plus profondes entre lots et exploitations",
-      "Analyse IA avec niveau avance",
-      "Pilotage plus global de l'activite",
+      "Analyse IA avec niveau avancé",
+      "Pilotage plus global de l'activité",
       "Support prioritaire",
     ],
-    cta: "Parler a l'equipe",
+    cta: "Parler à l'équipe",
     highlighted: false,
-    audience: "Pour fermes structurees et entreprises",
-    aiLabel: "IA incluse : priorite et analyse avancee",
+    audience: "Pour fermes structurées et entreprises",
+    aiLabel: "IA incluse : priorité et analyse avancée",
   },
 ];
 
@@ -70,13 +70,13 @@ export default function Pricing() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
             Commencez avec l&apos;essentiel, ajoutez plus de pilotage et d&apos;analyse quand
-            l&apos;exploitation gagne en volume, en equipe et en exigence.
+            l&apos;exploitation gagne en volume, en équipe et en exigence.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-amber-100 bg-amber-50 px-5 py-4 text-sm text-amber-900 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-200">
-          L&apos;essai permet de decouvrir la plateforme. L&apos;IA n&apos;est pas la base du
-          produit : elle vient en complement dans Pro et Business pour enrichir
+          L&apos;essai permet de découvrir la plateforme. L&apos;IA n&apos;est pas la base du
+          produit : elle vient en complément dans Pro et Business pour enrichir
           l&apos;analyse.
         </div>
 
@@ -92,7 +92,7 @@ export default function Pricing() {
             >
               {plan.highlighted ? (
                 <div className="absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-amber-400 px-4 py-1 text-xs font-bold text-gray-900 shadow-sm">
-                  <span>Recommandee</span>
+                  <span>Recommandée</span>
                   <span className="h-1.5 w-1.5 rounded-full bg-gray-900" />
                   <span>Pro</span>
                 </div>

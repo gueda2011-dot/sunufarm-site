@@ -4,23 +4,23 @@ import { useActionState } from "react";
 import { submitContact, type FormState } from "@/app/actions";
 
 const demoHighlights = [
-  "Presentation guidee de 20 a 30 minutes selon votre exploitation",
-  "Ecrans reels de SunuFarm sur mobile et ordinateur",
-  "Recommandation de formule selon vos sites, votre equipe et vos objectifs",
+  "Présentation guidée de 20 à 30 minutes selon votre exploitation",
+  "Écrans réels de SunuFarm sur mobile et ordinateur",
+  "Recommandation de formule selon vos sites, votre équipe et vos objectifs",
 ];
 
 const demoAgenda = [
   {
     title: "Comprendre votre fonctionnement",
-    body: "On part de votre realite terrain : nombre de lots, organisation, equipe et besoins de pilotage.",
+    body: "On part de votre réalité terrain : nombre de lots, organisation, équipe et besoins de pilotage.",
   },
   {
     title: "Montrer les flux essentiels",
-    body: "On vous fait voir concretement le suivi des lots, des stocks, des ventes, des depenses et des rapports.",
+    body: "On vous fait voir concrètement le suivi des lots, des stocks, des ventes, des dépenses et des rapports.",
   },
   {
     title: "Repartir avec une vision claire",
-    body: "Vous savez si SunuFarm est adapte, comment le deployer et quelle formule choisir.",
+    body: "Vous savez si SunuFarm est adapté, comment le déployer et quelle formule choisir.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Contact() {
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
         <div className="text-white">
           <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-semibold tracking-wide text-green-100">
-            Demo personnalisee SunuFarm
+            Démo personnalisée SunuFarm
           </span>
 
           <h2 className="mt-5 max-w-xl text-3xl font-bold leading-tight sm:text-4xl">
@@ -46,10 +46,10 @@ export default function Contact() {
           </h2>
 
           <p className="mt-4 max-w-2xl text-base leading-7 text-green-50/90 sm:text-lg">
-            Cette demo n&apos;est pas une simple video marketing. Nous vous montrons des
-            ecrans reels de la plateforme, le parcours terrain sur mobile et les vues
-            de pilotage qui aident a mieux suivre les lots, le stock, les ventes et la
-            rentabilite.
+            Cette démo n&apos;est pas une simple vidéo marketing. Nous vous montrons des
+            écrans réels de la plateforme, le parcours terrain sur mobile et les vues
+            de pilotage qui aident à mieux suivre les lots, le stock, les ventes et la
+            rentabilité.
           </p>
 
           <div className="mt-8 grid gap-3">
@@ -65,7 +65,7 @@ export default function Contact() {
 
           <div className="mt-8 rounded-[28px] border border-white/12 bg-black/10 p-6 backdrop-blur-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-100/80">
-              Ce que l&apos;on couvre pendant la demo
+              Ce que l&apos;on couvre pendant la démo
             </p>
             <div className="mt-5 space-y-5">
               {demoAgenda.map((item, index) => (
@@ -86,7 +86,7 @@ export default function Contact() {
         {state?.success ? (
           <div className="rounded-[32px] border border-white/15 bg-white p-8 text-center shadow-2xl shadow-black/15 dark:bg-[#101914]">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-              Demande envoyee
+              Demande envoyée
             </p>
             <p className="text-2xl font-bold text-gray-900 dark:text-white">
               Nous revenons vers vous rapidement.
@@ -102,14 +102,14 @@ export default function Contact() {
           >
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-                Planifier une demo
+                Planifier une démo
               </p>
               <h3 className="mt-3 text-2xl font-bold text-gray-900 dark:text-white">
                 Dites-nous en quelques mots ce que vous voulez voir
               </h3>
               <p className="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">
-                Nous adaptons la presentation a votre niveau de maturite, a votre
-                taille d&apos;exploitation et a vos priorites du moment.
+                Nous adaptons la présentation à votre niveau de maturité, à votre
+                taille d&apos;exploitation et à vos priorités du moment.
               </p>
             </div>
 
@@ -144,7 +144,7 @@ export default function Contact() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Telephone ou WhatsApp</label>
+                <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Téléphone ou WhatsApp</label>
                 <input
                   type="tel"
                   name="phone"
@@ -160,9 +160,9 @@ export default function Contact() {
                   className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-600 dark:border-white/10 dark:bg-white/5 dark:text-white"
                 >
                   <option value="" disabled>
-                    Selectionnez votre profil
+                    Sélectionnez votre profil
                   </option>
-                  <option value="Eleveur">Eleveur</option>
+                  <option value="Eleveur">Éleveur</option>
                   <option value="Responsable d'exploitation">Responsable d&apos;exploitation</option>
                   <option value="Gestionnaire ou administratif">Gestionnaire ou administratif</option>
                   <option value="Entreprise avicole">Entreprise avicole</option>
@@ -177,24 +177,24 @@ export default function Contact() {
               <input
                 type="text"
                 name="farmSize"
-                placeholder="Ex. 3 sites, 12 batiments, 18 000 tetes"
+                placeholder="Ex. 3 sites, 12 bâtiments, 18 000 têtes"
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-600 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder-gray-500"
               />
             </div>
 
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Ce que vous voulez voir pendant la demo</label>
+              <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Ce que vous voulez voir pendant la démo</label>
               <textarea
                 name="message"
                 required
                 rows={5}
-                placeholder="Parlez-nous de vos priorites : suivi des lots, saisie mobile, stock, ventes, finances, rapports..."
+                placeholder="Parlez-nous de vos priorités : suivi des lots, saisie mobile, stock, ventes, finances, rapports..."
                 className="w-full resize-none rounded-xl border border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-600 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder-gray-500"
               />
             </div>
 
             <div className="rounded-2xl bg-green-50 px-4 py-3 text-sm text-green-900 dark:bg-green-500/10 dark:text-green-100">
-              Reponse rapide, sans engagement. Nous vous recontactons pour caler une demonstration adaptee a votre contexte.
+              Réponse rapide, sans engagement. Nous vous recontactons pour caler une démonstration adaptée à votre contexte.
             </div>
 
             <button
@@ -202,7 +202,7 @@ export default function Contact() {
               disabled={pending}
               className="w-full rounded-xl bg-green-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-green-800 disabled:opacity-60"
             >
-              {pending ? "Envoi en cours..." : "Demander ma demonstration"}
+              {pending ? "Envoi en cours..." : "Demander ma démonstration"}
             </button>
           </form>
         )}

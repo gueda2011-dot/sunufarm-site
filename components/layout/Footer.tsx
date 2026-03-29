@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
         <div>
           <BrandLogo dark />
-          <p className="mt-1">Gestion avicole mobile, claire et orientee terrain.</p>
+          <p className="mt-1">Gestion avicole mobile, claire et orientée terrain.</p>
         </div>
 
         <nav className="flex gap-6">
           <a href="#problems" className="transition-colors hover:text-white">
-            Problemes
+            Problèmes
           </a>
           <a href="#value" className="transition-colors hover:text-white">
             Valeur

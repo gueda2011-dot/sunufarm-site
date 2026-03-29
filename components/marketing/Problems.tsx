@@ -1,33 +1,33 @@
 const problems = [
   {
     icon: "!",
-    title: "Des pertes non visibles assez tot",
+    title: "Des pertes non visibles assez tôt",
     description:
-      "Mortalite, consommation, sante ou cout aliment derapent parfois sans signal clair, jusqu'a ce que la marge soit deja abimee.",
+      "Mortalité, consommation, santé ou coût aliment dérapent parfois sans signal clair, jusqu'à ce que la marge soit déjà abîmée.",
   },
   {
     icon: "%",
-    title: "Une rentabilite que l'on decouvre trop tard",
+    title: "Une rentabilité que l'on découvre trop tard",
     description:
-      "Sans lecture par lot ou par periode, il devient difficile de savoir ce qui rapporte vraiment et ce qui vous fait perdre.",
+      "Sans lecture par lot ou par période, il devient difficile de savoir ce qui rapporte vraiment et ce qui vous fait perdre.",
   },
   {
     icon: "[]",
-    title: "Une gestion dispersee entre plusieurs supports",
+    title: "Une gestion dispersée entre plusieurs supports",
     description:
-      "Cahiers, messages, feuilles Excel et memoire des equipes finissent par ralentir le suivi et faire perdre des informations utiles.",
+      "Cahiers, messages, feuilles Excel et mémoire des équipes finissent par ralentir le suivi et faire perdre des informations utiles.",
   },
   {
     icon: "F",
-    title: "Des decisions prises trop tard",
+    title: "Des décisions prises trop tard",
     description:
-      "Quand les donnees arrivent en retard ou restent floues, il est plus dur d'agir vite sur un lot, un stock ou une depense.",
+      "Quand les données arrivent en retard ou restent floues, il est plus dur d'agir vite sur un lot, un stock ou une dépense.",
   },
   {
     icon: "+",
-    title: "Une equipe sans cadre commun",
+    title: "Une équipe sans cadre commun",
     description:
-      "Quand plusieurs personnes interviennent, chacun travaille a sa facon et les acces sont rarement bien organises.",
+      "Quand plusieurs personnes interviennent, chacun travaille à sa façon et les accès sont rarement bien organisés.",
   },
 ];
 
@@ -37,12 +37,12 @@ export default function Problems() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Les freins qui coutent cher a une exploitation avicole
+            Les freins qui coûtent cher à une exploitation avicole
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Quand les pertes, les couts et les informations restent flous, il
-            devient difficile de piloter sereinement. SunuFarm aide a remettre de
-            la visibilite la ou les decisions se jouent.
+            Quand les pertes, les coûts et les informations restent flous, il
+            devient difficile de piloter sereinement. SunuFarm aide à remettre de
+            la visibilité là où les décisions se jouent.
           </p>
         </div>
 

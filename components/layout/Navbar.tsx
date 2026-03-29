@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 import BrandLogo from "./BrandLogo";
 
 const links = [
-  { label: "Problemes", href: "#problems" },
+  { label: "Problèmes", href: "#problems" },
   { label: "Valeur", href: "#value" },
   { label: "Tarifs", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -41,7 +41,7 @@ export default function Navbar() {
             href="#contact"
             className="hidden rounded-xl bg-green-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-800 md:inline-block"
           >
-            Demander une demonstration
+            Demander une démonstration
           </a>
 
           <button
@@ -90,7 +90,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="mt-3 block rounded-xl bg-green-700 px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-800"
           >
-            Demander une demonstration
+            Demander une démonstration
           </a>
         </div>
       ) : null}

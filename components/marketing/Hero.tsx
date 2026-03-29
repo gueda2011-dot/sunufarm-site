@@ -8,24 +8,24 @@ export default function Hero() {
         <div className="flex flex-col gap-12 md:flex-row md:items-center">
           <div className="flex-1 text-center md:text-left">
             <span className="mb-4 inline-block rounded-full bg-green-100 px-4 py-1 text-sm font-medium text-green-700 dark:bg-green-500/15 dark:text-green-300">
-              Pilotage avicole mobile, concret et oriente resultat
+              Pilotage avicole mobile, concret et orienté résultat
             </span>
 
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-              Reduisez les pertes, suivez la rentabilite et pilotez votre exploitation avec plus de clarte
+              Réduisez les pertes, suivez la rentabilité et pilotez votre exploitation avec plus de clarté
             </h1>
 
             <p className="mt-5 text-lg text-gray-600 dark:text-gray-300">
-              SunuFarm vous aide a voir plus vite ce qui fait gagner ou perdre de
-              l&apos;argent, a mieux suivre chaque lot et a prendre de meilleures
-              decisions sur le terrain comme au niveau de l&apos;exploitation.
+              SunuFarm vous aide à voir plus vite ce qui fait gagner ou perdre de
+              l&apos;argent, à mieux suivre chaque lot et à prendre de meilleures
+              décisions sur le terrain comme au niveau de l&apos;exploitation.
             </p>
 
             <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
               {[
                 "Sachez si un lot est rentable avant la fin du cycle",
-                "Reperez plus tot les pertes et les ecarts importants",
-                "Centralisez lots, sante, stock et finances au meme endroit",
+                "Repérez plus tôt les pertes et les écarts importants",
+                "Centralisez lots, santé, stock et finances au même endroit",
               ].map((item) => (
                 <div
                   key={item}
@@ -41,7 +41,7 @@ export default function Hero() {
                 href="#contact"
                 className="rounded-xl bg-green-700 px-6 py-3 text-base font-semibold text-white shadow transition-colors hover:bg-green-800"
               >
-                Demander une demo
+                Demander une démo
               </a>
               <a
                 href={whatsappUrl}
@@ -55,9 +55,9 @@ export default function Hero() {
 
             <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
               {[
-                "Concu pour les realites du terrain",
-                "Adapte a l'Afrique francophone",
-                "Simple a utiliser",
+                "Conçu pour les réalités du terrain",
+                "Adapté à l'Afrique francophone",
+                "Simple à utiliser",
               ].map((item) => (
                 <span
                   key={item}

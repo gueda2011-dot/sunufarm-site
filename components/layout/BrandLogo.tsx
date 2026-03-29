@@ -10,11 +10,11 @@ export default function BrandLogo({ compact = false, dark = false }: BrandLogoPr
   return (
     <Link href="/" className="inline-flex items-center">
       <Image
-        src="/sunufarm-logo.svg"
+        src="/logo-sunufarm.png"
         alt="SunuFarm"
-        width={compact ? 138 : 168}
-        height={compact ? 34 : 42}
-        className={`h-auto ${dark ? "brightness-0 invert" : ""}`}
+        width={compact ? 168 : 196}
+        height={compact ? 56 : 66}
+        className={`h-auto w-auto ${dark ? "rounded-xl bg-white px-2 py-1" : ""}`}
         priority
       />
     </Link>

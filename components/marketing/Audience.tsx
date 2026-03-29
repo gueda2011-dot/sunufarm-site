@@ -4,10 +4,10 @@ const audiences = [
     icon: "01",
     headline: "Mettez de l'ordre dans la gestion sans alourdir le terrain",
     points: [
-      "Lots, fermes, batiments et charges au meme endroit",
-      "Une prise en main simple sur telephone ou ordinateur",
-      "Un historique plus fiable que les cahiers eparpilles",
-      "Ideal pour demarrer avec Basic",
+      "Lots, fermes, bâtiments et charges au même endroit",
+      "Une prise en main simple sur téléphone ou ordinateur",
+      "Un historique plus fiable que les cahiers éparpillés",
+      "Idéal pour démarrer avec Basic",
     ],
     cta: "Voir Basic",
     href: "#pricing",
@@ -15,27 +15,27 @@ const audiences = [
   {
     label: "Exploitations en croissance",
     icon: "02",
-    headline: "Pilotez les operations, la marge et les decisions au quotidien",
+    headline: "Pilotez les opérations, la marge et les décisions au quotidien",
     points: [
-      "Bilans de rentabilite, rapports et indicateurs utiles",
-      "Gestion plus structuree des achats, ventes et stocks",
+      "Bilans de rentabilité, rapports et indicateurs utiles",
+      "Gestion plus structurée des achats, ventes et stocks",
       "Analyse IA des lots pour aller plus vite sur certains arbitrages",
       "Le bon niveau pour progresser avec Pro",
     ],
-    cta: "Decouvrir Pro",
+    cta: "Découvrir Pro",
     href: "#pricing",
   },
   {
-    label: "Structures organisees",
+    label: "Structures organisées",
     icon: "03",
-    headline: "Coordonnez plusieurs sites, plusieurs roles et plus de controle",
+    headline: "Coordonnez plusieurs sites, plusieurs rôles et plus de contrôle",
     points: [
-      "Gestion d'equipe et acces par module",
-      "Vision plus globale des exploitations et des responsabilites",
-      "PWA installable et organisation plus adaptee au travail terrain",
-      "Pense pour les fermes structurees et les operations multi-sites",
+      "Gestion d'équipe et accès par module",
+      "Vision plus globale des exploitations et des responsabilités",
+      "PWA installable et organisation plus adaptée au travail terrain",
+      "Pensé pour les fermes structurées et les opérations multi-sites",
     ],
-    cta: "Decouvrir Business",
+    cta: "Découvrir Business",
     href: "#pricing",
   },
 ];
@@ -46,10 +46,10 @@ export default function Audience() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            {`SunuFarm s'adapte a votre niveau d'exploitation`}
+            {`SunuFarm s'adapte à votre niveau d'exploitation`}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Vos besoins ne sont pas les memes selon la taille de l&apos;exploitation,
+            Vos besoins ne sont pas les mêmes selon la taille de l&apos;exploitation,
             le niveau d&apos;organisation de l&apos;equipe et la profondeur de pilotage attendue.
           </p>
         </div>

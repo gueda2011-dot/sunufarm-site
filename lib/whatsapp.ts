@@ -1,5 +1,5 @@
 const message =
-  "Bonjour, je souhaite en savoir plus sur SunuFarm et demander une demonstration.";
+  "Bonjour, je souhaite en savoir plus sur SunuFarm et demander une démonstration.";
 
 const whatsappNumber = "221763126922";
 

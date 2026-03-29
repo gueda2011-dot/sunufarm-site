@@ -3,37 +3,37 @@ const values = [
     icon: "01",
     title: "Sachez rapidement si un lot est rentable",
     description:
-      "Reliez lots, achats, ventes, charges et indicateurs pour voir plus clairement ce qui rapporte et ce qui doit etre corrige.",
+      "Reliez lots, achats, ventes, charges et indicateurs pour voir plus clairement ce qui rapporte et ce qui doit être corrigé.",
   },
   {
     icon: "02",
-    title: "Detectez plus vite les problemes importants",
+    title: "Détectez plus vite les problèmes importants",
     description:
-      "La plateforme aide a reperer les ecarts sur la mortalite, la consommation, les traitements ou les couts avant qu'ils ne pesent trop lourd.",
+      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu'ils ne pèsent trop lourd.",
   },
   {
     icon: "03",
-    title: "Decidez avec plus de confiance",
+    title: "Décidez avec plus de confiance",
     description:
-      "Vous arbitrez mieux quand les informations terrain, les depenses et les resultats sont enfin lisibles au meme endroit.",
+      "Vous arbitrez mieux quand les informations terrain, les dépenses et les résultats sont enfin lisibles au même endroit.",
   },
   {
     icon: "04",
-    title: "Centralisez les donnees utiles a l'exploitation",
+    title: "Centralisez les données utiles à l'exploitation",
     description:
-      "Fermes, batiments, lots, stock, ventes, fournisseurs et finances restent relies dans une meme base simple a exploiter.",
+      "Fermes, bâtiments, lots, stock, ventes, fournisseurs et finances restent reliés dans une même base simple à exploiter.",
   },
   {
     icon: "05",
-    title: "Travaillez mieux avec votre equipe",
+    title: "Travaillez mieux avec votre équipe",
     description:
-      "Le proprietaire garde la main, les acces sont mieux organises et chacun voit ce qu'il doit saisir ou suivre.",
+      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu'il doit saisir ou suivre.",
   },
   {
     icon: "06",
     title: "Ajoutez de l'analyse quand elle aide vraiment",
     description:
-      "L'IA de SunuFarm sert a faire ressortir des points d'attention concrets pour accelerer la lecture, pas pour compliquer le pilotage.",
+      "L'IA de SunuFarm sert à faire ressortir des points d'attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Value() {
             Ce que SunuFarm change pour vous
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Des benefices concrets pour mieux piloter, mieux reagir et mieux lire
+            Des bénéfices concrets pour mieux piloter, mieux réagir et mieux lire
             la performance de votre exploitation.
           </p>
         </div>
@@ -57,12 +57,12 @@ export default function Value() {
               Pilotage plus clair
             </p>
             <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white">
-              Moins de gestion dispersee, plus de visibilite sur ce qui compte vraiment.
+              Moins de gestion dispersée, plus de visibilité sur ce qui compte vraiment.
             </h3>
             <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 md:text-base">
-              SunuFarm ne sert pas seulement a saisir des donnees. La plateforme
-              vous aide a transformer vos informations terrain en decisions plus
-              rapides, plus fiables et plus utiles pour la rentabilite.
+              SunuFarm ne sert pas seulement à saisir des données. La plateforme
+              vous aide à transformer vos informations terrain en décisions plus
+              rapides, plus fiables et plus utiles pour la rentabilité.
             </p>
           </div>
         </div>

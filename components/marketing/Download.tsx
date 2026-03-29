@@ -18,7 +18,7 @@ export default function Download() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-400">
             Commencez sur navigateur, installez l&apos;application si besoin, et avancez
-            a votre rythme vers une gestion plus claire de votre exploitation.
+            à votre rythme vers une gestion plus claire de votre exploitation.
           </p>
         </div>
 
@@ -36,8 +36,8 @@ export default function Download() {
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Demarrez rapidement sur ordinateur ou telephone pour voir comment
-              SunuFarm peut vous aider a mieux suivre vos lots, vos chiffres et vos operations.
+              Démarrez rapidement sur ordinateur ou téléphone pour voir comment
+              SunuFarm peut vous aider à mieux suivre vos lots, vos chiffres et vos opérations.
             </p>
             <a
               href="https://app.sunufarm.com"
@@ -60,8 +60,8 @@ export default function Download() {
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Sur Android et sur certains appareils iOS, SunuFarm peut etre ajoute
-              a l&apos;ecran d&apos;accueil pour offrir une experience plus proche d&apos;une application.
+              Sur Android et sur certains appareils iOS, SunuFarm peut être ajouté
+              à l&apos;écran d&apos;accueil pour offrir une expérience plus proche d&apos;une application.
             </p>
 
             <div className="mb-4 mt-5 flex gap-2">
@@ -95,7 +95,7 @@ export default function Download() {
                   disabled={pending}
                   className="whitespace-nowrap rounded-xl bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-500 disabled:opacity-60 dark:bg-white/10 dark:hover:bg-white/15"
                 >
-                  {pending ? "..." : "Demander une demo"}
+                  {pending ? "..." : "Demander une démo"}
                 </button>
               </form>
             )}
