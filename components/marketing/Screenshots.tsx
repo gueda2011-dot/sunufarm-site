@@ -1,8 +1,8 @@
 const navItems = [
   "Tableau de bord",
-  "Saisie journaliere",
-  "Lots d'elevage",
-  "Sante animale",
+  "Saisie journalière",
+  "Lots d'élevage",
+  "Santé animale",
   "Finances",
 ];
 
@@ -92,8 +92,8 @@ function DashboardPreview() {
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {[
           { label: "Lots actifs", value: "4", note: "8 800 sujets", accent: "text-slate-900 dark:text-white" },
-          { label: "Charges globales", value: "11,2M FCFA", note: "Achats + depenses operat.", accent: "text-slate-900 dark:text-white" },
-          { label: "Mortalite cumulee", value: "17", note: "0,2% des sujets", accent: "text-green-600" },
+          { label: "Charges globales", value: "11,2M FCFA", note: "Achats + dépenses opérat.", accent: "text-slate-900 dark:text-white" },
+          { label: "Mortalité cumulée", value: "17", note: "0,2% des sujets", accent: "text-green-600" },
           { label: "Alertes saisie", value: "2", note: "lots en retard", accent: "text-orange-500" },
         ].map((card) => (
           <div
@@ -113,17 +113,17 @@ function DashboardPreview() {
 function LotsPreview() {
   return (
     <ScreenshotShell
-      active="Lots d'elevage"
-      title="Type d'elevage"
-      subtitle="Creer et structurer un lot avec des champs simples a remplir."
+      active="Lots d'élevage"
+      title="Type d'élevage"
+      subtitle="Créer et structurer un lot avec des champs simples à remplir."
     >
       <div className="space-y-5">
         <div className="rounded-[24px] border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-[#101914]">
           <h5 className="text-xl font-semibold text-slate-900 dark:text-white">Localisation</h5>
           <div className="mt-5 grid gap-4">
             {[
-              { label: "Ferme", value: "Selectionner une ferme" },
-              { label: "Batiment", value: "Selectionner d'abord une ferme" },
+              { label: "Ferme", value: "Sélectionner une ferme" },
+              { label: "Bâtiment", value: "Sélectionner d'abord une ferme" },
             ].map((field) => (
               <div key={field.label}>
                 <p className="mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">{field.label}</p>
@@ -139,8 +139,8 @@ function LotsPreview() {
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               { label: "Type", value: "Poulet de chair" },
-              { label: "Espece", value: "Poulet" },
-              { label: "Race / souche", value: "Selectionner une race", full: true },
+              { label: "Espèce", value: "Poulet" },
+              { label: "Race / souche", value: "Sélectionner une race", full: true },
             ].map((field) => (
               <div key={field.label} className={field.full ? "sm:col-span-2" : ""}>
                 <p className="mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">{field.label}</p>
@@ -159,9 +159,9 @@ function LotsPreview() {
 function HealthPreview() {
   return (
     <ScreenshotShell
-      active="Sante animale"
-      title="Sante animale"
-      subtitle="Pilotage des vaccinations, traitements et lots a surveiller."
+      active="Santé animale"
+      title="Santé animale"
+      subtitle="Pilotage des vaccinations, traitements et lots à surveiller."
     >
       <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-6">
         {[
@@ -169,7 +169,7 @@ function HealthPreview() {
           { label: "Traitements actifs", value: "0", note: "en cours", accent: "text-slate-900 dark:text-white" },
           { label: "Total vaccinations", value: "0", note: "historique", accent: "text-blue-600" },
           { label: "Total traitements", value: "0", note: "historique", accent: "text-slate-900 dark:text-white" },
-          { label: "Lots a surveiller", value: "4", note: "vaccinations dues", accent: "text-orange-500" },
+          { label: "Lots à surveiller", value: "4", note: "vaccinations dues", accent: "text-orange-500" },
           { label: "Plans vaccinaux", value: "0", note: "templates actifs", accent: "text-blue-600" },
         ].map((item) => (
           <div
@@ -184,14 +184,14 @@ function HealthPreview() {
       </div>
 
       <div className="mt-5 rounded-[24px] border border-amber-200 bg-[#fff8e6] p-5 dark:border-amber-400/20 dark:bg-amber-500/10">
-        <h5 className="text-2xl font-semibold text-amber-900 dark:text-amber-200">Lots a surveiller</h5>
+        <h5 className="text-2xl font-semibold text-amber-900 dark:text-amber-200">Lots à surveiller</h5>
         <p className="mt-2 text-sm text-amber-800 dark:text-amber-100/80">
-          Ces lots ont des vaccinations a faire maintenant ou deja en retard.
+          Ces lots ont des vaccinations à faire maintenant ou déjà en retard.
         </p>
 
         <div className="mt-4 space-y-4">
           {[
-            { lot: "SF-2026-002", day: "Jour 65", late: "5 en retard", todo: "1 a faire" },
+            { lot: "SF-2026-002", day: "Jour 65", late: "5 en retard", todo: "1 à faire" },
             { lot: "SF-2026-001", day: "Jour 33", late: "5 en retard", todo: null },
           ].map((row) => (
             <div
@@ -203,9 +203,9 @@ function HealthPreview() {
                   <p className="text-2xl font-semibold text-slate-900 dark:text-white">{row.lot}</p>
                   <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{row.day}</p>
                   <div className="mt-3 space-y-1 text-sm text-slate-600 dark:text-slate-300">
-                    <p>Marek - J0 a J2 - en retard</p>
-                    <p>Newcastle HB1 - J7 a J14 - en retard</p>
-                    <p>Gumboro - 1ere dose - J7 a J14 - en retard</p>
+                    <p>Marek - J0 à J2 - en retard</p>
+                    <p>Newcastle HB1 - J7 à J14 - en retard</p>
+                    <p>Gumboro - 1ère dose - J7 à J14 - en retard</p>
                   </div>
                 </div>
                 <div className="flex gap-2">
@@ -232,13 +232,13 @@ function FinancePreview() {
     <ScreenshotShell
       active="Finances"
       title="Finances"
-      subtitle="Suivi des depenses de l'organisation."
+      subtitle="Suivi des dépenses de l'organisation."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         {[
-          { label: "Total depenses", value: "5 315 000 FCFA", accent: "text-slate-900 dark:text-white" },
+          { label: "Total dépenses", value: "5 315 000 FCFA", accent: "text-slate-900 dark:text-white" },
           { label: "Total ventes", value: "5 828 360 FCFA", accent: "text-slate-900 dark:text-white" },
-          { label: "Resultat net", value: "513 360 FCFA", accent: "text-green-600" },
+          { label: "Résultat net", value: "513 360 FCFA", accent: "text-green-600" },
         ].map((item) => (
           <div
             key={item.label}
@@ -252,12 +252,12 @@ function FinancePreview() {
 
       <div className="mt-5 grid gap-4 lg:grid-cols-[0.9fr_1.35fr]">
         <div className="rounded-[22px] border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-[#101914]">
-          <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Nouvelle depense</h5>
+          <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Nouvelle dépense</h5>
           <div className="mt-5 space-y-4">
             {[
               { label: "Description", value: "Ex : Achat d'aliment" },
               { label: "Montant (FCFA)", value: "50000" },
-              { label: "Date", value: "26 fevr. 2026" },
+              { label: "Date", value: "26 févr. 2026" },
             ].map((field) => (
               <div key={field.label}>
                 <p className="mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">{field.label}</p>
@@ -270,17 +270,17 @@ function FinancePreview() {
         </div>
 
         <div className="rounded-[22px] border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-[#101914]">
-          <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Liste des depenses</h5>
+          <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Liste des dépenses</h5>
           <div className="mt-5 space-y-4">
             {[
               {
                 title: "Achat 2000 poussins Cobb 500 - AVISEN",
-                date: "24 fevr. 2026",
+                date: "24 févr. 2026",
                 amount: "1 500 000 FCFA",
               },
               {
                 title: "Achat aliment croissance Avicoop No 2 - 4 tonnes",
-                date: "22 fevr. 2026 - Aliment - Ref. BL-2026-089",
+                date: "22 févr. 2026 - Aliment - Ref. BL-2026-089",
                 amount: "1 700 000 FCFA",
               },
             ].map((item) => (
@@ -295,7 +295,7 @@ function FinancePreview() {
                   </div>
                   <div className="text-right">
                     <p className="text-xl font-semibold text-slate-900 dark:text-white">{item.amount}</p>
-                    <p className="mt-2 text-sm font-medium text-blue-600">Details</p>
+                    <p className="mt-2 text-sm font-medium text-blue-600">Détails</p>
                   </div>
                 </div>
               </div>
@@ -331,7 +331,7 @@ function ReportsPreview() {
 
       <div className="mt-5 rounded-[24px] border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-[#101914]">
         <p className="text-sm font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
-          Vue financiere du mois
+          Vue financière du mois
         </p>
 
         <div className="mt-5">
@@ -360,18 +360,18 @@ function ReportsPreview() {
         {[
           {
             label: "Ventes",
-            title: "Attention : 23.6% vs mois precedent",
-            note: "Mois precedent : 3 303 360 FCFA",
+            title: "Attention : 23.6% vs mois précédent",
+            note: "Mois précédent : 3 303 360 FCFA",
           },
           {
-            label: "Depenses",
-            title: "Evolution favorable : 100.0% vs mois precedent",
-            note: "Mois precedent : 3 200 000 FCFA",
+            label: "Dépenses",
+            title: "Évolution favorable : 100.0% vs mois précédent",
+            note: "Mois précédent : 3 200 000 FCFA",
           },
           {
-            label: "Mortalite",
-            title: "Stable par rapport au mois precedent",
-            note: "Mois precedent : 9 sujets",
+            label: "Mortalité",
+            title: "Stable par rapport au mois précédent",
+            note: "Mois précédent : 9 sujets",
           },
         ].map((item) => (
           <div
@@ -395,13 +395,13 @@ function SalesPreview() {
     <ScreenshotShell
       active="Ventes"
       title="Liste des ventes"
-      subtitle="Historique des ventes enregistrees et suivi des encaissements."
+      subtitle="Historique des ventes enregistrées et suivi des encaissements."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         {[
           { label: "Chiffre d'affaires", value: "5 828 360 FCFA", accent: "text-slate-900 dark:text-white" },
-          { label: "Montant encaisse", value: "3 690 860 FCFA", accent: "text-green-600" },
-          { label: "Reste a encaisser", value: "2 137 500 FCFA", accent: "text-orange-500" },
+          { label: "Montant encaissé", value: "3 690 860 FCFA", accent: "text-green-600" },
+          { label: "Reste à encaisser", value: "2 137 500 FCFA", accent: "text-orange-500" },
         ].map((item) => (
           <div
             key={item.label}
@@ -417,7 +417,7 @@ function SalesPreview() {
         <div className="border-b border-gray-200 px-5 py-4 dark:border-white/10">
           <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Liste des ventes</h5>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            Historique des ventes enregistrees.
+            Historique des ventes enregistrées.
           </p>
         </div>
 
@@ -452,7 +452,7 @@ function SalesPreview() {
                   <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{sale.date}</p>
                 </div>
                 <div className="rounded-[18px] bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-700 dark:bg-white/5 dark:text-slate-300">
-                  Voir detail
+                  Voir détail
                 </div>
               </div>
 
@@ -461,7 +461,7 @@ function SalesPreview() {
                   Total : <span className="font-semibold text-slate-900 dark:text-white">{sale.total}</span>
                 </p>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  Paye : <span className="font-semibold text-green-600">{sale.paid}</span>
+                  Payé : <span className="font-semibold text-green-600">{sale.paid}</span>
                 </p>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
                   Reste : <span className="font-semibold text-orange-500">{sale.rest}</span>
@@ -480,13 +480,13 @@ function ClientsPreview() {
     <ScreenshotShell
       active="Clients"
       title="Clients"
-      subtitle="Carnet clients et suivi des creances."
+      subtitle="Carnet clients et suivi des créances."
     >
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h5 className="text-2xl font-semibold text-slate-900 dark:text-white">Clients</h5>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            Carnet clients et suivi des creances
+            Carnet clients et suivi des créances
           </p>
         </div>
         <div className="rounded-[18px] bg-green-600 px-5 py-3 text-sm font-semibold text-white">
@@ -496,9 +496,9 @@ function ClientsPreview() {
 
       <div className="mt-5 grid gap-4 md:grid-cols-3">
         {[
-          { label: "Clients", value: "3", note: "enregistres", accent: "text-blue-600" },
+          { label: "Clients", value: "3", note: "enregistrés", accent: "text-blue-600" },
           { label: "CA total", value: "4.1M FCFA", note: "toutes ventes", accent: "text-green-600" },
-          { label: "Creances", value: "388K FCFA", note: "reste a encaisser", accent: "text-red-600" },
+          { label: "Créances", value: "388K FCFA", note: "reste à encaisser", accent: "text-red-600" },
         ].map((item) => (
           <div
             key={item.label}
@@ -584,11 +584,11 @@ export default function Screenshots() {
             Captures de la plateforme
           </span>
           <h2 className="mt-4 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Voyez concretement les ecrans utilises pour piloter l&apos;exploitation
+            Voyez concrètement les écrans utilisés pour piloter l&apos;exploitation
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
-            Une interface claire pour lire vos performances, creer vos lots,
-            suivre la sante animale et garder une vision precise de vos finances.
+            Une interface claire pour lire vos performances, créer vos lots,
+            suivre la santé animale et garder une vision précise de vos finances.
           </p>
         </div>
 
@@ -598,7 +598,7 @@ export default function Screenshots() {
               Dashboard
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Visualisez vos performances en un coup d&apos;oeil
+              Visualisez vos performances en un coup d&apos;œil
             </p>
             <DashboardPreview />
           </div>
@@ -608,14 +608,14 @@ export default function Screenshots() {
               Lots
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Suivez chaque lot du debut a la fin
+              Suivez chaque lot du début à la fin
             </p>
             <LotsPreview />
           </div>
 
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-              Sante
+              Santé
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
               Ne ratez plus les traitements
@@ -628,7 +628,7 @@ export default function Screenshots() {
               Finances
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Gardez une vision claire de vos resultats
+              Gardez une vision claire de vos résultats
             </p>
             <FinancePreview />
           </div>
@@ -638,7 +638,7 @@ export default function Screenshots() {
               Rapports
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Suivez vos indicateurs mensuels et exportez vos donnees
+              Suivez vos indicateurs mensuels et exportez vos données
             </p>
             <ReportsPreview />
           </div>
@@ -648,7 +648,7 @@ export default function Screenshots() {
               Ventes
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Suivez vos ventes, vos encaissements et ce qu&apos;il reste a recuperer
+              Suivez vos ventes, vos encaissements et ce qu&apos;il reste à récupérer
             </p>
             <SalesPreview />
           </div>
@@ -658,7 +658,7 @@ export default function Screenshots() {
               Clients
             </p>
             <p className="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-              Gardez un carnet client clair avec vos creances sous controle
+              Gardez un carnet client clair avec vos créances sous contrôle
             </p>
             <ClientsPreview />
           </div>
@@ -666,9 +666,9 @@ export default function Screenshots() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
-            "Concu pour les realites du terrain",
-            "Adapte a l'Afrique francophone",
-            "Simple a utiliser par les equipes",
+            "Conçu pour les réalités du terrain",
+            "Adapté à l'Afrique francophone",
+            "Simple à utiliser par les équipes",
           ].map((item) => (
             <span
               key={item}

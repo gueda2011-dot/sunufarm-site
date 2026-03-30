@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
+import { siteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SunuFarm - Gestion avicole mobile et pilotage d'exploitation",
+  metadataBase: new URL(siteUrl),
+  title: "SunuFarm - Gestion avicole mobile et pilotage d’exploitation",
   description:
-    "SunuFarm aide les exploitations avicoles a gerer fermes, batiments, lots, saisies, achats, ventes, stock, finances, equipe et rapports depuis une plateforme simple et mobile.",
+    "SunuFarm aide les exploitations avicoles à gérer fermes, bâtiments, lots, saisies, achats, ventes, stock, finances, équipe et rapports depuis une plateforme simple et mobile.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

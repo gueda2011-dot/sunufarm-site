@@ -36,12 +36,12 @@ const plans = [
     cta: "Choisir Pro",
     highlighted: true,
     audience: "Plan le plus choisi",
-    aiLabel: "IA incluse : oui, en quota maitrise",
+    aiLabel: "IA incluse : oui, en quota maîtrisé",
   },
   {
     name: "Business",
     price: "25 000",
-    tagline: "Equipez une organisation plus exigeante",
+    tagline: "Équipez une organisation plus exigeante",
     description:
       "Pour les structures qui veulent encadrer plusieurs utilisateurs, mieux organiser les accès et piloter avec plus de profondeur.",
     features: [

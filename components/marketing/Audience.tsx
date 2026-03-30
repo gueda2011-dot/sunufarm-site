@@ -50,7 +50,7 @@ export default function Audience() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
             Vos besoins ne sont pas les mêmes selon la taille de l&apos;exploitation,
-            le niveau d&apos;organisation de l&apos;equipe et la profondeur de pilotage attendue.
+            le niveau d&apos;organisation de l&apos;équipe et la profondeur de pilotage attendue.
           </p>
         </div>
 

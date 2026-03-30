@@ -25,7 +25,7 @@ export default function AppMockup() {
                 </div>
                 <div>
                   <p className="text-base font-bold text-red-500">1,2%</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">Mortalite</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500">Mortalité</p>
                 </div>
                 <div>
                   <p className="text-base font-bold text-green-600">J+18</p>
@@ -36,13 +36,13 @@ export default function AppMockup() {
 
             <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm dark:border-white/10 dark:bg-[#101c16]">
               <p className="mb-2 text-xs font-semibold text-gray-700 dark:text-gray-200">
-                Resume achats et charges
+                Résumé achats et charges
               </p>
               <div className="space-y-1.5">
                 {[
                   { label: "Aliments", value: "142 000", color: "bg-amber-400", width: "w-4/5" },
-                  { label: "Medicaments", value: "28 000", color: "bg-blue-400", width: "w-2/5" },
-                  { label: "Main-d'oeuvre", value: "35 000", color: "bg-orange-400", width: "w-1/2" },
+                  { label: "Médicaments", value: "28 000", color: "bg-blue-400", width: "w-2/5" },
+                  { label: "Main-d'œuvre", value: "35 000", color: "bg-orange-400", width: "w-1/2" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-2">
                     <span className="w-24 shrink-0 text-xs text-gray-500 dark:text-gray-400">
@@ -65,7 +65,7 @@ export default function AppMockup() {
                 +187 000 <span className="text-sm font-normal text-green-200">FCFA</span>
               </p>
               <p className="mt-0.5 text-xs text-green-300">
-                Marge estimee a date sur l&apos;activite suivie
+                Marge estimée à date sur l&apos;activité suivie
               </p>
             </div>
 
@@ -79,11 +79,11 @@ export default function AppMockup() {
                 </span>
               </div>
               <p className="mt-2 text-sm font-semibold text-gray-900 dark:text-white">
-                Consommation a surveiller cette semaine
+                Consommation à surveiller cette semaine
               </p>
               <p className="mt-1 text-xs text-gray-600 dark:text-gray-300">
-                La consommation progresse plus vite que prevu. Verifiez l&apos;indice,
-                le cout aliment et l&apos;evolution de la mortalite sur les prochains jours.
+                La consommation progresse plus vite que prévu. Vérifiez l&apos;indice,
+                le coût aliment et l&apos;évolution de la mortalité sur les prochains jours.
               </p>
             </div>
           </div>

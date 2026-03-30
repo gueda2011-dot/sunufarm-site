@@ -66,7 +66,7 @@ export async function submitWaitlist(
     return {
       success: true,
       message: "Inscription confirmée ! Vous serez notifié à la sortie de l'app.",
-  }
+    }
   } catch {
     return { success: false, message: 'Une erreur est survenue. Réessayez.' }
   }

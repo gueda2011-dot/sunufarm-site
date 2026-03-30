@@ -1,11 +1,11 @@
 # SunuFarm Site
 
-Site marketing de SunuFarm, une application de gestion avicole orientee terrain pour les eleveurs, responsables d'exploitation et structures avicoles.
+Site marketing de SunuFarm, une application de gestion avicole orientée terrain pour les éleveurs, responsables d'exploitation et structures avicoles.
 
 Le site a deux objectifs principaux :
 
-- presenter clairement la proposition de valeur de SunuFarm ;
-- convertir les visiteurs en demandes de demonstration, prises de contact WhatsApp ou inscriptions.
+- présenter clairement la proposition de valeur de SunuFarm ;
+- convertir les visiteurs en demandes de démonstration, prises de contact WhatsApp ou inscriptions.
 
 ## Stack
 
@@ -35,17 +35,17 @@ Le site inclut aussi :
 
 - un CTA WhatsApp dans le hero ;
 - un bouton WhatsApp flottant ;
-- une section screenshots qui reconstitue plusieurs ecrans produit : dashboard, lots, sante, finances, rapports, ventes et clients.
+- une section screenshots qui reconstitue plusieurs écrans produit : dashboard, lots, santé, finances, rapports, ventes et clients.
 
 ## Lancer le projet
 
-Installer les dependances :
+Installer les dépendances :
 
 ```bash
 npm install
 ```
 
-Demarrer le serveur de developpement :
+Démarrer le serveur de développement :
 
 ```bash
 npm run dev
@@ -63,7 +63,7 @@ Lancer la version de production localement :
 npm run start
 ```
 
-Verifier le lint :
+Vérifier le lint :
 
 ```bash
 npm run lint
@@ -82,17 +82,17 @@ CONTACT_EMAIL=contact@sunufarm.com
 
 Usage :
 
-- `RESEND_API_KEY` : cle API Resend utilisee pour envoyer les emails ;
-- `CONTACT_EMAIL` : adresse qui recoit les demandes de demo et les inscriptions.
+- `RESEND_API_KEY` : clé API Resend utilisée pour envoyer les emails ;
+- `CONTACT_EMAIL` : adresse qui reçoit les demandes de démo et les inscriptions.
 
 Sans configuration Resend valide, les formulaires ne pourront pas envoyer d'email.
 
 ## WhatsApp
 
-Le lien WhatsApp utilise le numero configure dans `lib/whatsapp.ts` avec un message pre-rempli.
+Le lien WhatsApp utilise le numéro configuré dans `lib/whatsapp.ts` avec un message pré-rempli.
 
-- numero actuel : `+221 76 312 69 22`
-- message : `Bonjour, je souhaite en savoir plus sur SunuFarm et demander une demonstration.`
+- numéro actuel : `+221 76 312 69 22`
+- message : `Bonjour, je souhaite en savoir plus sur SunuFarm et demander une démonstration.`
 
 ## Structure utile
 
@@ -105,10 +105,11 @@ app/
 
 components/
   layout/           # Navbar, footer, theme toggle, bouton WhatsApp flottant
-  marketing/        # Sections de la landing page et apercus produit
+  marketing/        # Sections de la landing page et aperçus produit
 
 lib/
-  whatsapp.ts       # lien WhatsApp et message pre-rempli
+  site.ts           # URL du site marketing et URL de l'application
+  whatsapp.ts       # lien WhatsApp et message pré-rempli
 
 docs/
   marketing-direction.md   # intention marketing et positionnement du site
@@ -118,21 +119,21 @@ public/             # assets statiques
 
 ## Parcours couverts
 
-- demande de demonstration depuis la section `Contact` ;
+- demande de démonstration depuis la section `Contact` ;
 - prise de contact directe via WhatsApp ;
-- inscription / demande de demo legere depuis la section `Download` ;
-- redirection vers l'application via `https://app.sunufarm.com`.
+- inscription / demande de démo légère depuis la section `Download` ;
+- redirection vers l'application via `https://app.sunufarm-app.com`.
 
 ## Positionnement de la landing
 
-La landing actuelle est pensee pour etre plus orientee conversion que le template initial :
+La landing actuelle est pensée pour être plus orientée conversion que le template initial :
 
-- hero axe sur les resultats : pertes, rentabilite, pilotage ;
-- problemes et valeur formules de maniere plus concrete et business ;
-- offre `Pro` mise en avant comme formule recommandee ;
-- preuves produit visuelles via une grande section screenshots inspiree des ecrans reels de l'application ;
-- marqueurs de credibilite : usage terrain, simplicite, adaptation a l'Afrique francophone.
+- hero axé sur les résultats : pertes, rentabilité, pilotage ;
+- problèmes et valeur formulés de manière plus concrète et business ;
+- offre `Pro` mise en avant comme formule recommandée ;
+- preuves produit visuelles via une grande section screenshots inspirée des écrans réels de l'application ;
+- marqueurs de crédibilité : usage terrain, simplicité, adaptation à l'Afrique francophone.
 
 ## Notes de contenu
 
-Le positionnement marketing du site est documente dans [docs/marketing-direction.md](./docs/marketing-direction.md). Le ton du site doit rester simple, concret, credible et oriente resultat plutot que liste brute de fonctionnalites.
+Le positionnement marketing du site est documenté dans [docs/marketing-direction.md](./docs/marketing-direction.md). Le ton du site doit rester simple, concret, crédible et orienté résultat plutôt que liste brute de fonctionnalités.

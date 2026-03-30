@@ -3,11 +3,11 @@ const problems = [
     icon: "!",
     title: "Des pertes non visibles assez tôt",
     description:
-      "Mortalité, consommation, santé ou coût aliment dérapent parfois sans signal clair, jusqu'à ce que la marge soit déjà abîmée.",
+      "Mortalité, consommation, santé ou coût aliment dérapent parfois sans signal clair, jusqu&apos;à ce que la marge soit déjà abîmée.",
   },
   {
     icon: "%",
-    title: "Une rentabilité que l'on découvre trop tard",
+    title: "Une rentabilité que l&apos;on découvre trop tard",
     description:
       "Sans lecture par lot ou par période, il devient difficile de savoir ce qui rapporte vraiment et ce qui vous fait perdre.",
   },
@@ -21,7 +21,7 @@ const problems = [
     icon: "F",
     title: "Des décisions prises trop tard",
     description:
-      "Quand les données arrivent en retard ou restent floues, il est plus dur d'agir vite sur un lot, un stock ou une dépense.",
+      "Quand les données arrivent en retard ou restent floues, il est plus dur d&apos;agir vite sur un lot, un stock ou une dépense.",
   },
   {
     icon: "+",

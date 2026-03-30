@@ -9,7 +9,7 @@ const values = [
     icon: "02",
     title: "Détectez plus vite les problèmes importants",
     description:
-      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu'ils ne pèsent trop lourd.",
+      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu&apos;ils ne pèsent trop lourd.",
   },
   {
     icon: "03",
@@ -19,7 +19,7 @@ const values = [
   },
   {
     icon: "04",
-    title: "Centralisez les données utiles à l'exploitation",
+    title: "Centralisez les données utiles à l&apos;exploitation",
     description:
       "Fermes, bâtiments, lots, stock, ventes, fournisseurs et finances restent reliés dans une même base simple à exploiter.",
   },
@@ -27,13 +27,13 @@ const values = [
     icon: "05",
     title: "Travaillez mieux avec votre équipe",
     description:
-      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu'il doit saisir ou suivre.",
+      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu&apos;il doit saisir ou suivre.",
   },
   {
     icon: "06",
     title: "Ajoutez de l'analyse quand elle aide vraiment",
     description:
-      "L'IA de SunuFarm sert à faire ressortir des points d'attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
+      "L&apos;IA de SunuFarm sert à faire ressortir des points d&apos;attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
   },
 ];
 

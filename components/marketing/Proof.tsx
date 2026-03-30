@@ -1,20 +1,20 @@
 const stats = [
-  { value: "-", label: "Eleveurs accompagnes", note: "bientot disponible" },
+  { value: "-", label: "Éleveurs accompagnés", note: "bientôt disponible" },
   { value: "-", label: "Lots suivis", note: "bientot disponible" },
-  { value: "-", label: "Reduction moyenne des pertes", note: "bientot disponible" },
+  { value: "-", label: "Réduction moyenne des pertes", note: "bientôt disponible" },
 ];
 
 const testimonials = [
   {
     quote:
-      "SunuFarm m'a aide a voir enfin ce que mes lots me coutaient vraiment. Maintenant je sais ou agir.",
-    author: "Eleveur - Dakar",
+      "SunuFarm m'a aidé à voir enfin ce que mes lots me coûtaient vraiment. Maintenant je sais où agir.",
+    author: "Éleveur - Dakar",
     initials: "A.D.",
   },
   {
     quote:
-      "Avant, je gerais tout dans un cahier. Aujourd'hui tout est dans l'appli et je perds moins de temps.",
-    author: "Gerant de ferme - Thies",
+      "Avant, je gérais tout dans un cahier. Aujourd'hui tout est dans l'appli et je perds moins de temps.",
+    author: "Gérant de ferme - Thiès",
     initials: "M.F.",
   },
 ];
@@ -25,10 +25,10 @@ export default function Proof() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Des resultats concrets pour les eleveurs
+            Des résultats concrets pour les éleveurs
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500">
-            SunuFarm se construit avec les eleveurs, pour les eleveurs.
+            SunuFarm se construit avec les éleveurs, pour les éleveurs.
           </p>
         </div>
 

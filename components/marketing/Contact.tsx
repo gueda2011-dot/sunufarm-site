@@ -42,7 +42,7 @@ export default function Contact() {
           </span>
 
           <h2 className="mt-5 max-w-xl text-3xl font-bold leading-tight sm:text-4xl">
-            Voyez concretement comment SunuFarm s&apos;integre dans votre exploitation
+            Voyez concrètement comment SunuFarm s&apos;intègre dans votre exploitation
           </h2>
 
           <p className="mt-4 max-w-2xl text-base leading-7 text-green-50/90 sm:text-lg">

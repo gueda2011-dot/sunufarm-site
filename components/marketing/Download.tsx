@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitWaitlist, type FormState } from "@/app/actions";
+import { appUrl } from "@/lib/site";
 
 export default function Download() {
   const [state, action, pending] = useActionState<FormState, FormData>(
@@ -40,7 +41,7 @@ export default function Download() {
               SunuFarm peut vous aider à mieux suivre vos lots, vos chiffres et vos opérations.
             </p>
             <a
-              href="https://app.sunufarm.com"
+              href={appUrl}
               className="mt-5 block rounded-xl bg-green-700 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-600"
             >
               Essayer l&apos;application
@@ -60,7 +61,7 @@ export default function Download() {
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Sur Android et sur certains appareils iOS, SunuFarm peut être ajouté
+              Sur Android et sur certains appareils iOS, SunuFarm peut être ajoutée
               à l&apos;écran d&apos;accueil pour offrir une expérience plus proche d&apos;une application.
             </p>
 
@@ -73,7 +74,7 @@ export default function Download() {
               </div>
               <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2 dark:border-white/10 dark:bg-white/5">
                 <div>
-                  <p className="text-xs text-gray-400">Ajout a l&apos;ecran d&apos;accueil</p>
+                  <p className="text-xs text-gray-400">Ajout à l&apos;écran d&apos;accueil</p>
                   <p className="text-xs font-semibold text-white">iPhone / iPad</p>
                 </div>
               </div>
