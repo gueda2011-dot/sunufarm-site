@@ -9,7 +9,7 @@ const values = [
     icon: "02",
     title: "Détectez plus vite les problèmes importants",
     description:
-      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu&apos;ils ne pèsent trop lourd.",
+      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu'ils ne pèsent trop lourd.",
   },
   {
     icon: "03",
@@ -19,7 +19,7 @@ const values = [
   },
   {
     icon: "04",
-    title: "Centralisez les données utiles à l&apos;exploitation",
+    title: "Centralisez les données utiles à l'exploitation",
     description:
       "Fermes, bâtiments, lots, stock, ventes, fournisseurs et finances restent reliés dans une même base simple à exploiter.",
   },
@@ -27,19 +27,19 @@ const values = [
     icon: "05",
     title: "Travaillez mieux avec votre équipe",
     description:
-      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu&apos;il doit saisir ou suivre.",
+      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu'il doit saisir ou suivre.",
   },
   {
     icon: "06",
     title: "Ajoutez de l'analyse quand elle aide vraiment",
     description:
-      "L&apos;IA de SunuFarm sert à faire ressortir des points d&apos;attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
+      "L'IA de SunuFarm sert à faire ressortir des points d'attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
   },
 ];
 
 export default function Value() {
   return (
-    <section id="value" className="bg-white px-5 py-14 dark:bg-[#07110c] md:py-20">
+    <section id="value" className="bg-gray-50 px-5 py-14 dark:bg-[#0a1410] md:py-20">
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">

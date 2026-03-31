@@ -7,9 +7,15 @@ export default function Hero() {
       <div className="mx-auto max-w-5xl">
         <div className="flex flex-col gap-12 md:flex-row md:items-center">
           <div className="flex-1 text-center md:text-left">
-            <span className="mb-4 inline-block rounded-full bg-green-100 px-4 py-1 text-sm font-medium text-green-700 dark:bg-green-500/15 dark:text-green-300">
-              Pilotage avicole mobile, concret et orienté résultat
-            </span>
+            <div className="mb-4 flex flex-wrap justify-center gap-2 md:justify-start">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-green-100 px-4 py-1 text-sm font-medium text-green-700 dark:bg-green-500/15 dark:text-green-300">
+                <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                Application disponible
+              </span>
+              <span className="inline-flex rounded-full border border-gray-200 bg-white px-4 py-1 text-sm font-medium text-gray-600 dark:border-white/10 dark:bg-white/5 dark:text-gray-300">
+                Afrique francophone
+              </span>
+            </div>
 
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-5xl">
               Réduisez les pertes, suivez la rentabilité et pilotez votre exploitation avec plus de clarté

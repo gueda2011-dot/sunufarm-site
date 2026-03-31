@@ -15,11 +15,11 @@ export default function Download() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Essayer SunuFarm
+            Accéder à SunuFarm
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-400">
-            Commencez sur navigateur, installez l&apos;application si besoin, et avancez
-            à votre rythme vers une gestion plus claire de votre exploitation.
+            Démarrez sur navigateur, installez l&apos;application sur votre téléphone
+            et commencez à piloter votre exploitation dès aujourd&apos;hui.
           </p>
         </div>
 
@@ -32,19 +32,19 @@ export default function Download() {
               <div>
                 <p className="font-semibold text-white">Application web</p>
                 <span className="rounded-full bg-green-700 px-2 py-0.5 text-xs font-medium text-green-100">
-                  Disponible
+                  Disponible maintenant
                 </span>
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Démarrez rapidement sur ordinateur ou téléphone pour voir comment
-              SunuFarm peut vous aider à mieux suivre vos lots, vos chiffres et vos opérations.
+              Ouvrez SunuFarm depuis n&apos;importe quel navigateur sur téléphone ou
+              ordinateur. Aucune installation requise pour commencer.
             </p>
             <a
               href={appUrl}
               className="mt-5 block rounded-xl bg-green-700 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-600"
             >
-              Essayer l&apos;application
+              Ouvrir l&apos;application
             </a>
           </div>
 
@@ -56,16 +56,17 @@ export default function Download() {
               <div>
                 <p className="font-semibold text-white">Installation PWA</p>
                 <span className="rounded-full bg-green-700 px-2 py-0.5 text-xs font-medium text-green-100">
-                  Disponible selon appareil
+                  Android & iOS
                 </span>
               </div>
             </div>
             <p className="flex-1 text-sm text-gray-400">
-              Sur Android et sur certains appareils iOS, SunuFarm peut être ajoutée
-              à l&apos;écran d&apos;accueil pour offrir une expérience plus proche d&apos;une application.
+              Sur Android et iPhone, ajoutez SunuFarm à votre écran d&apos;accueil
+              pour une expérience proche d&apos;une application native, avec des alertes
+              push en temps réel.
             </p>
 
-            <div className="mb-4 mt-5 flex gap-2">
+            <div className="mt-5 flex gap-2">
               <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2 dark:border-white/10 dark:bg-white/5">
                 <div>
                   <p className="text-xs text-gray-400">Ajout rapide sur</p>
@@ -74,36 +75,47 @@ export default function Download() {
               </div>
               <div className="flex flex-1 items-center rounded-xl border border-gray-600 bg-gray-700 px-3 py-2 dark:border-white/10 dark:bg-white/5">
                 <div>
-                  <p className="text-xs text-gray-400">Ajout à l&apos;écran d&apos;accueil</p>
+                  <p className="text-xs text-gray-400">Ajout à l&apos;écran</p>
                   <p className="text-xs font-semibold text-white">iPhone / iPad</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-gray-700 bg-gray-800 p-6 dark:border-white/10 dark:bg-[#0f1b15]">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-semibold text-white">Rester informé des nouveautés</p>
+              <p className="mt-1 text-sm text-gray-400">
+                Laissez votre email pour recevoir les mises à jour produit et les nouvelles fonctionnalités.
+              </p>
+            </div>
 
             {state?.success ? (
-              <p className="text-sm font-medium text-green-400">OK {state.message}</p>
+              <p className="text-sm font-medium text-green-400 sm:shrink-0">{state.message}</p>
             ) : (
-              <form action={action} className="flex gap-2">
+              <form action={action} className="flex w-full gap-2 sm:w-auto sm:shrink-0">
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="votre@email.com"
-                  className="flex-1 rounded-xl border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 dark:border-white/10 dark:bg-white/5"
+                  className="min-w-0 flex-1 rounded-xl border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 dark:border-white/10 dark:bg-white/5 sm:w-56 sm:flex-none"
                 />
                 <button
                   type="submit"
                   disabled={pending}
                   className="whitespace-nowrap rounded-xl bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-500 disabled:opacity-60 dark:bg-white/10 dark:hover:bg-white/15"
                 >
-                  {pending ? "..." : "Demander une démo"}
+                  {pending ? "..." : "S'inscrire"}
                 </button>
               </form>
             )}
-            {state && !state.success ? (
-              <p className="mt-1 text-xs text-red-400">{state.message}</p>
-            ) : null}
           </div>
+          {state && !state.success ? (
+            <p className="mt-2 text-xs text-red-400">{state.message}</p>
+          ) : null}
         </div>
       </div>
     </section>
