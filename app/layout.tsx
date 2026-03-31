@@ -17,13 +17,84 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "SunuFarm – Logiciel de gestion avicole pour l'Afrique";
+const description =
+  "Pilotez vos lots, votre stock, vos ventes et votre rentabilité depuis une application mobile simple, conçue pour les éleveurs avicoles d'Afrique francophone.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SunuFarm - Gestion avicole mobile et pilotage d’exploitation",
-  description:
-    "SunuFarm aide les exploitations avicoles à gérer fermes, bâtiments, lots, saisies, achats, ventes, stock, finances, équipe et rapports depuis une plateforme simple et mobile.",
+  title,
+  description,
+  keywords: [
+    "gestion avicole",
+    "logiciel élevage poulet",
+    "suivi lot avicole",
+    "rentabilité aviculture",
+    "gestion ferme Sénégal",
+    "application élevage Afrique",
+    "SunuFarm",
+  ],
   alternates: {
     canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "SunuFarm",
+    locale: "fr_FR",
+    title,
+    description,
+    images: [
+      {
+        url: "/logo-sunufarm.png",
+        alt: "SunuFarm – Gestion avicole mobile",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/logo-sunufarm.png"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "SunuFarm",
+  url: siteUrl,
+  description,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web, Android, iOS",
+  inLanguage: "fr",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Basic",
+      price: "5000",
+      priceCurrency: "XOF",
+      billingIncrement: "P1M",
+    },
+    {
+      "@type": "Offer",
+      name: "Pro",
+      price: "10000",
+      priceCurrency: "XOF",
+      billingIncrement: "P1M",
+    },
+    {
+      "@type": "Offer",
+      name: "Business",
+      price: "25000",
+      priceCurrency: "XOF",
+      billingIncrement: "P1M",
+    },
+  ],
+  publisher: {
+    "@type": "Organization",
+    name: "SunuFarm",
+    url: siteUrl,
   },
 };
 
@@ -39,6 +110,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white text-gray-950 dark:bg-[#07110c] dark:text-gray-100">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <Script id="sunufarm-site-theme" strategy="beforeInteractive">
           {`
             (() => {
