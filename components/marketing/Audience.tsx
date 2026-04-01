@@ -2,12 +2,12 @@ const audiences = [
   {
     label: "Exploitations en lancement",
     icon: "01",
-    headline: "Mettez de l'ordre dans la gestion sans alourdir le terrain",
+    headline: "Posez une base simple, propre et abordable",
     points: [
-      "Lots, fermes, bâtiments et charges au même endroit",
-      "Une prise en main simple sur téléphone ou ordinateur",
-      "Un historique plus fiable que les cahiers éparpillés",
-      "Idéal pour démarrer avec Basic",
+      "Lots, fermes, batiments et charges au meme endroit",
+      "Une prise en main simple sur telephone ou ordinateur",
+      "Un historique plus fiable que les cahiers disperses",
+      "Ideal pour demarrer avec Basic a 3 000 FCFA",
     ],
     cta: "Voir Basic",
     href: "#pricing",
@@ -15,27 +15,27 @@ const audiences = [
   {
     label: "Exploitations en croissance",
     icon: "02",
-    headline: "Pilotez les opérations, la marge et les décisions au quotidien",
+    headline: "Passez au pilotage lot par lot avec plus d'anticipation",
     points: [
-      "Bilans de rentabilité, rapports et indicateurs utiles",
-      "Gestion plus structurée des achats, ventes et stocks",
-      "Analyse IA des lots pour aller plus vite sur certains arbitrages",
+      "Rentabilite, rapports et indicateurs utiles au quotidien",
+      "Predictions stock, mortalite et marge pour arbitrer plus vite",
+      "Gestion plus structuree des achats, ventes, sante et stocks",
       "Le bon niveau pour progresser avec Pro",
     ],
-    cta: "Découvrir Pro",
+    cta: "Decouvrir Pro",
     href: "#pricing",
   },
   {
-    label: "Structures organisées",
+    label: "Structures organisees",
     icon: "03",
-    headline: "Coordonnez plusieurs sites, plusieurs rôles et plus de contrôle",
+    headline: "Pilotez toute l'exploitation, pas seulement chaque lot",
     points: [
-      "Gestion d'équipe et accès par module",
-      "Vision plus globale des exploitations et des responsabilités",
-      "PWA installable et organisation plus adaptée au travail terrain",
-      "Pensé pour les fermes structurées et les opérations multi-sites",
+      "Vue globale exploitation avec signaux prioritaires",
+      "Recommandations dirigeant et export Business consolide",
+      "Gestion d'equipe, multi-fermes et coordination plus claire",
+      "Pense pour les operations plus structurees et multi-sites",
     ],
-    cta: "Découvrir Business",
+    cta: "Decouvrir Business",
     href: "#pricing",
   },
 ];
@@ -46,11 +46,11 @@ export default function Audience() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            {`SunuFarm s'adapte à votre niveau d'exploitation`}
+            {`SunuFarm s'adapte a votre niveau d'exploitation`}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Vos besoins ne sont pas les mêmes selon la taille de l&apos;exploitation,
-            le niveau d&apos;organisation de l&apos;équipe et la profondeur de pilotage attendue.
+            Vos besoins ne sont pas les memes selon la taille de l&apos;exploitation,
+            le niveau d&apos;organisation de l&apos;equipe et la profondeur de pilotage attendue.
           </p>
         </div>
 

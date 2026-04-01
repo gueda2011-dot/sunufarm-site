@@ -4,39 +4,39 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "À qui s'adresse SunuFarm ?",
+    question: "A qui s'adresse SunuFarm ?",
     answer:
-      "SunuFarm s'adresse aux éleveurs avicoles, aux exploitations en croissance et aux structures plus organisées qui veulent mieux piloter les opérations, les coûts et les équipes.",
+      "SunuFarm s'adresse aux eleveurs avicoles, aux exploitations en croissance et aux structures plus organisees qui veulent mieux piloter les operations, les couts, le stock, les equipes et la rentabilite.",
   },
   {
     question: "Que permet SunuFarm aujourd'hui ?",
     answer:
-      "La plateforme couvre l'ensemble des besoins d'une exploitation : fermes, bâtiments, lots, saisie terrain, stock aliments et médicaments, achats fournisseurs, ventes, dépenses, finances, rapports mensuels, gestion d'équipe et alertes push sur mobile. C'est un outil de gestion avicole complet, pas seulement un module d'analyse.",
+      "La plateforme couvre deja les besoins terrain et de pilotage : fermes, batiments, lots, saisie journaliere, sante, stock aliments et medicaments, achats fournisseurs, ventes, depenses, finances, rapports, equipe, alertes push et lecture Business consolidee.",
   },
   {
-    question: "L'IA de SunuFarm, c'est quoi exactement ?",
+    question: "Quelles fonctions predictives sont deja disponibles ?",
     answer:
-      "Ce n'est pas un chatbot généraliste. L'IA sert à relire les données d'un lot pour faire ressortir des risques, des écarts et des points d'attention concrets afin d'aider à décider plus vite.",
+      "SunuFarm propose deja trois axes predictifs utiles : prediction de rupture stock, prediction du risque mortalite sur 7 jours et projection de la marge finale d'un lot. Ces signaux sont disponibles dans Pro et Business.",
   },
   {
-    question: "L'IA est-elle disponible dans toutes les formules ?",
+    question: "Que change Business par rapport a Pro ?",
     answer:
-      "Non. Basic se concentre sur la gestion et l'organisation. Pro ajoute l'analyse IA des lots avec un cadre maîtrisé. Business va plus loin avec un niveau d'analyse et de pilotage plus avancé.",
+      "Pro aide surtout a piloter lot par lot. Business ajoute une vraie vue globale exploitation avec signaux prioritaires, recommandations dirigeant, export Business consolide, multi-fermes, equipe et pilotage transverse.",
   },
   {
     question: "SunuFarm fonctionne-t-il bien sur mobile ?",
     answer:
-      "Oui. L'application est pensée pour le terrain, avec un accès navigateur mobile, une installation PWA et des alertes push en temps réel directement sur le téléphone.",
+      "Oui. L'application est pensee pour le terrain, avec acces navigateur mobile, installation PWA, alertes push et un premier niveau de travail hors ligne avec resynchronisation sur les flux critiques.",
   },
   {
-    question: "Peut-on gérer plusieurs utilisateurs ?",
+    question: "Peut-on gerer plusieurs utilisateurs ?",
     answer:
-      "Oui. Le propriétaire peut organiser l'accès des membres de l'équipe, ajuster les modules visibles selon les rôles et restreindre les droits par ferme si besoin.",
+      "Oui. Le proprietaire peut organiser l'acces des membres de l'equipe, ajuster les modules visibles selon les roles et restreindre les droits par ferme si besoin. C'est particulierement utile avec Business.",
   },
   {
     question: "Puis-je changer de formule plus tard ?",
     answer:
-      "Oui. Vous pouvez commencer simplement, puis passer à une formule plus riche quand l'exploitation gagne en volume, en équipe ou en exigences de pilotage.",
+      "Oui. Vous pouvez commencer avec Basic a 3 000 FCFA, passer a Pro pour mieux piloter vos lots, puis evoluer vers Business quand l'exploitation gagne en volume, en equipe ou en exigence de pilotage global.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Questions fréquentes
+            Questions frequentes
           </h2>
         </div>
 

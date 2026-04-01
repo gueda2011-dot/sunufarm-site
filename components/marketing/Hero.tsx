@@ -18,20 +18,20 @@ export default function Hero() {
             </div>
 
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-              Réduisez les pertes, suivez la rentabilité et pilotez votre exploitation avec plus de clarté
+              Pilotez les lots, anticipez les risques et voyez toute l&apos;exploitation plus clairement
             </h1>
 
             <p className="mt-5 text-lg text-gray-600 dark:text-gray-300">
-              SunuFarm vous aide à voir plus vite ce qui fait gagner ou perdre de
-              l&apos;argent, à mieux suivre chaque lot et à prendre de meilleures
-              décisions sur le terrain comme au niveau de l&apos;exploitation.
+              SunuFarm aide les elevages avicoles a mieux suivre le terrain, reduire les pertes
+              et prendre de meilleures decisions avec une lecture lot par lot dans Pro, puis une
+              vraie vue dirigeant dans Business.
             </p>
 
             <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
               {[
-                "Sachez si un lot est rentable avant la fin du cycle",
-                "Repérez plus tôt les pertes et les écarts importants",
-                "Centralisez lots, santé, stock et finances au même endroit",
+                "Predictions stock, mortalite et marge dans Pro et Business",
+                "Mode hors ligne avec resynchronisation pour les flux terrain critiques",
+                "Vue Business consolidee pour piloter risques, marges et urgences",
               ].map((item) => (
                 <div
                   key={item}
@@ -47,7 +47,7 @@ export default function Hero() {
                 href="#contact"
                 className="rounded-xl bg-green-700 px-6 py-3 text-base font-semibold text-white shadow transition-colors hover:bg-green-800"
               >
-                Demander une démo
+                Demander une demo
               </a>
               <a
                 href={whatsappUrl}
@@ -61,9 +61,9 @@ export default function Hero() {
 
             <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
               {[
-                "Conçu pour les réalités du terrain",
-                "Adapté à l'Afrique francophone",
-                "Simple à utiliser",
+                "Terrain + finances + stock dans un seul outil",
+                "PWA mobile avec alertes push",
+                "Positionnement clair Basic, Pro, Business",
               ].map((item) => (
                 <span
                   key={item}

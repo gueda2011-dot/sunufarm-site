@@ -2,33 +2,33 @@ const groups = [
   {
     category: "Terrain",
     items: [
-      { name: "Lots d'élevage", desc: "Suivi complet du cycle, de l'entrée à la clôture" },
-      { name: "Saisie journalière", desc: "Mortalité, alimentation, eau, observations" },
-      { name: "Santé animale", desc: "Vaccinations, traitements, alertes de retard" },
+      { name: "Lots d'elevage", desc: "Suivi complet du cycle, de l'entree a la cloture" },
+      { name: "Saisie journaliere", desc: "Mortalite, alimentation, eau, observations et alertes de saisie" },
+      { name: "Sante animale", desc: "Vaccinations, traitements et suivi sanitaire plus lisible" },
     ],
   },
   {
-    category: "Stock & Achats",
+    category: "Stock & Finances",
     items: [
-      { name: "Stock aliments & médicaments", desc: "Articles, mouvements et soldes en temps réel" },
-      { name: "Achats fournisseurs", desc: "Commandes, paiements partiels, envoi au stock" },
-      { name: "Dépenses", desc: "Toutes les sorties d'argent hors achats fournisseur" },
+      { name: "Stock aliments & medicaments", desc: "Articles, mouvements, sorties terrain et soldes en temps reel" },
+      { name: "Achats fournisseurs", desc: "Commandes, paiements partiels, dette fournisseur et envoi au stock" },
+      { name: "Ventes & depenses", desc: "Flux financiers relies aux lots pour mieux lire la rentabilite" },
     ],
   },
   {
-    category: "Finance & Rapports",
+    category: "Predictif",
     items: [
-      { name: "Ventes & clients", desc: "Encaissements, créances, historique par client" },
-      { name: "Dashboard & KPI", desc: "Synthèse lots, alertes de saisie et indicateurs clés" },
-      { name: "Rapports mensuels", desc: "Vue financière complète, exports PDF, Excel et CSV" },
+      { name: "Prediction rupture stock", desc: "Anticipez les articles qui approchent d'une rupture" },
+      { name: "Prediction risque mortalite", desc: "Reperez plus vite les lots qui se degradent" },
+      { name: "Projection marge finale", desc: "Voyez quels lots menacent la rentabilite avant la fin du cycle" },
     ],
   },
   {
-    category: "Pilotage & Équipes",
+    category: "Pilotage Business",
     items: [
-      { name: "Analyse IA des lots", desc: "Points d'attention concrets par lot (Pro & Business)" },
-      { name: "Gestion des équipes", desc: "Rôles, modules et droits d'accès par ferme" },
-      { name: "Alertes push & PWA", desc: "Notifications mobiles en temps réel, app installable" },
+      { name: "Vue exploitation consolidee", desc: "Lecture dirigeant des marges, risques et stocks critiques" },
+      { name: "Gestion des equipes", desc: "Roles, modules et droits d'acces adaptes a l'organisation" },
+      { name: "Offline, PWA & push", desc: "Travail terrain plus robuste sur mobile, meme quand le reseau tombe" },
     ],
   },
 ];
@@ -39,14 +39,15 @@ export default function Modules() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <span className="inline-flex rounded-full bg-green-100 px-4 py-1 text-sm font-semibold text-green-700 dark:bg-green-500/15 dark:text-green-300">
-            Plateforme déjà opérationnelle
+            Plateforme deja operationnelle
           </span>
           <h2 className="mt-4 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Tout ce qu'il faut pour piloter une exploitation avicole
+            Une application qui va du terrain jusqu&apos;au pilotage global
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
-            SunuFarm n'est pas un prototype. L'ensemble des modules essentiels est déjà
-            en place et utilisable : terrain, stock, finances, rapports, équipes et mobile.
+            SunuFarm ne s&apos;arrete pas a la saisie. La plateforme relie operations terrain,
+            stock, finances, predictions et lecture dirigeant pour aider a mieux piloter
+            l&apos;exploitation.
           </p>
         </div>
 
@@ -78,8 +79,8 @@ export default function Modules() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
             "Application disponible maintenant",
-            "Accès mobile et ordinateur",
-            "Multi-sites et multi-utilisateurs",
+            "Acces mobile et ordinateur",
+            "Mode hors ligne sur flux terrain critiques",
           ].map((item) => (
             <span
               key={item}
