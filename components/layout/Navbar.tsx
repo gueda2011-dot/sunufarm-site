@@ -5,7 +5,8 @@ import ThemeToggle from "./ThemeToggle";
 import BrandLogo from "./BrandLogo";
 
 const links = [
-  { label: "Problèmes", href: "#problems" },
+  { label: "Problemes", href: "#problems" },
+  { label: "Fonctionnalites", href: "#features" },
   { label: "Valeur", href: "#value" },
   { label: "Tarifs", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -38,10 +39,10 @@ export default function Navbar() {
           </div>
 
           <a
-            href="#contact"
+            href="#pricing"
             className="hidden rounded-xl bg-green-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-800 md:inline-block"
           >
-            Demander une démonstration
+            Voir les offres
           </a>
 
           <button
@@ -86,11 +87,11 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
           <a
-            href="#contact"
+            href="#pricing"
             onClick={() => setOpen(false)}
             className="mt-3 block rounded-xl bg-green-700 px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-800"
           >
-            Demander une démonstration
+            Voir les offres
           </a>
         </div>
       ) : null}

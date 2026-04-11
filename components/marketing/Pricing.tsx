@@ -1,97 +1,88 @@
 const plans = [
   {
-    name: "Basic",
-    price: "3 000",
-    tagline: "Posez une base propre pour votre exploitation",
+    name: "FREE",
+    price: "0",
+    tagline: "Decouvrez SunuFarm et lancez un premier suivi",
     description:
-      "Pour les exploitations qui veulent sortir de la gestion approximative et centraliser les donnees essentielles.",
+      "Pour tester le mode de travail SunuFarm et sortir du suivi trop disperse.",
     features: [
-      "Fermes, batiments et lots",
-      "Saisie quotidienne de base",
-      "Achats, ventes et depenses essentielles",
+      "1 ferme de demarrage",
+      "Lots et saisie journaliere simple",
       "Acces mobile et ordinateur",
-      "Historique d'exploitation",
-      "Sans analyse predictive avancee",
+      "Lecture de base pour decouvrir l'app",
     ],
-    cta: "Commencer avec Basic",
-    audience: "Pour demarrer proprement",
-    aiLabel: "Pilotage de base",
-    accent: "basic" as const,
+    cta: "Commencer en Free",
+    audience: "Pour decouvrir le produit",
+    label: "Base simple",
+    highlighted: false,
   },
   {
-    name: "Pro",
-    price: "10 000",
-    tagline: "Passez de la gestion a un vrai pilotage lot par lot",
+    name: "STARTER",
+    price: "3 000",
+    tagline: "Structurez une ferme avec des chiffres propres",
     description:
-      "Pour les exploitations qui veulent suivre la performance, mieux arbitrer et commencer a anticiper les risques.",
+      "Pour passer d'une gestion approximative a une base claire, exploitable et suivie dans le temps.",
     features: [
-      "Tout ce qui est dans Basic",
-      "Rapports et tableaux de bord",
+      "Tout ce qui est dans FREE",
+      "Charges, ventes et depenses",
+      "Reports essentiels",
+      "Historique plus fiable",
+      "Premiere organisation de l'exploitation",
+    ],
+    cta: "Passer en Starter",
+    audience: "Pour poser la base",
+    label: "Organisation simple",
+    highlighted: false,
+  },
+  {
+    name: "PRO",
+    price: "10 000",
+    tagline: "Pilotez la rentabilite lot par lot",
+    description:
+      "Pour les exploitations qui veulent decider avec des chiffres economiques clairs et reagir plus vite.",
+    features: [
+      "Tout ce qui est dans STARTER",
       "Bilans de rentabilite par lot",
-      "Prediction rupture stock",
-      "Prediction risque mortalite",
-      "Projection marge finale",
-      "Analyse IA des lots",
+      "Prix minimum de vente",
+      "Alertes intelligentes",
+      "Actions immediates depuis les alertes",
+      "Reports de pilotage",
     ],
     cta: "Choisir Pro",
-    audience: "Plan le plus choisi",
-    aiLabel: "Pilotage predictif par lot",
-    accent: "pro" as const,
+    audience: "Le plan central",
+    label: "Decision economique",
     highlighted: true,
-    badge: "Recommandee",
+    badge: "Recommande",
   },
   {
-    name: "Business",
+    name: "BUSINESS",
     price: "25 000",
-    tagline: "Passez au pilotage global de l'exploitation",
+    tagline: "Coordonnez plusieurs fermes et plusieurs roles",
     description:
-      "Pour les structures qui veulent coordonner plusieurs sites ou plusieurs responsables avec une vraie lecture dirigeant.",
+      "Pour les structures qui ont besoin d'un pilotage transverse, d'une equipe organisee et d'une lecture consolidee.",
     features: [
-      "Tout ce qui est dans Pro",
-      "Vue globale exploitation",
-      "Signaux prioritaires et recommandations dirigeant",
-      "Export Business consolide",
-      "Gestion des equipes et acces",
-      "Organisation multi-fermes",
-      "Exports avances",
+      "Tout ce qui est dans PRO",
+      "Multi-fermes",
+      "Equipe et roles",
+      "Lecture consolidee de l'activite",
+      "Reports adaptes aux structures organisees",
     ],
     cta: "Choisir Business",
-    audience: "Pour fermes structurees et entreprises",
-    aiLabel: "Pilotage global et consolidations",
-    accent: "business" as const,
-    highlighted: true,
-    badge: "Vue dirigeant",
+    audience: "Pour les operations plus structurees",
+    label: "Pilotage multi-fermes",
+    highlighted: false,
   },
 ];
 
-function cardClasses(accent: "basic" | "pro" | "business", highlighted?: boolean) {
+function cardClasses(highlighted: boolean) {
   if (!highlighted) {
     return "border-gray-100 bg-white shadow-sm dark:border-white/10 dark:bg-[#101914] dark:shadow-none";
-  }
-
-  if (accent === "business") {
-    return "border-amber-400 bg-slate-900 text-white shadow-xl ring-4 ring-amber-200/60";
   }
 
   return "border-green-500 bg-green-700 text-white shadow-xl ring-4 ring-green-200/70";
 }
 
-function textTone(accent: "basic" | "pro" | "business", slot: "eyebrow" | "priceSub" | "body" | "pill" | "bullet") {
-  if (accent === "business") {
-    switch (slot) {
-      case "eyebrow":
-        return "text-amber-200";
-      case "priceSub":
-        return "text-slate-300";
-      case "body":
-        return "text-slate-200";
-      case "pill":
-        return "bg-white/10 text-amber-100";
-      case "bullet":
-        return "text-amber-300";
-    }
-  }
-
+function textTone(slot: "eyebrow" | "priceSub" | "body" | "pill" | "bullet") {
   switch (slot) {
     case "eyebrow":
       return "text-green-200";
@@ -112,33 +103,28 @@ export default function Pricing() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Des formules claires selon votre niveau de pilotage
+            Une progression simple: FREE, STARTER, PRO, BUSINESS
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
-            Basic sert a structurer la base. Pro aide a piloter chaque lot avec plus
-            d&apos;anticipation. Business donne une lecture globale pour diriger l&apos;exploitation.
+            Vous pouvez commencer gratuitement, structurer une ferme, passer au pilotage
+            economique par lot, puis organiser plusieurs fermes et plusieurs roles.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-amber-100 bg-amber-50 px-5 py-4 text-sm text-amber-900 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-200">
-          L&apos;essai permet de decouvrir la plateforme. Le predictif et la lecture dirigeant
-          ne remplacent pas le terrain : ils aident a prioriser plus vite les decisions.
+          Le coeur de la valeur se situe dans PRO: rentabilite par lot, prix minimum de vente,
+          alertes intelligentes et actions immediates. BUSINESS etend ensuite ce pilotage a
+          une organisation plus large.
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex flex-col rounded-2xl border p-6 ${cardClasses(plan.accent, plan.highlighted)}`}
+              className={`relative flex flex-col rounded-2xl border p-6 ${cardClasses(plan.highlighted)}`}
             >
               {plan.highlighted ? (
-                <div
-                  className={`absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-4 py-1 text-xs font-bold shadow-sm ${
-                    plan.accent === "business"
-                      ? "bg-amber-400 text-slate-950"
-                      : "bg-emerald-300 text-gray-900"
-                  }`}
-                >
+                <div className="absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-emerald-300 px-4 py-1 text-xs font-bold text-gray-900 shadow-sm">
                   <span>{plan.badge}</span>
                   <span className="h-1.5 w-1.5 rounded-full bg-current" />
                   <span>{plan.name}</span>
@@ -148,44 +134,54 @@ export default function Pricing() {
               <div>
                 <p
                   className={`text-xs font-semibold uppercase tracking-[0.16em] ${
-                    plan.highlighted ? textTone(plan.accent, "eyebrow") : "text-gray-500 dark:text-gray-400"
+                    plan.highlighted ? textTone("eyebrow") : "text-gray-500 dark:text-gray-400"
                   }`}
                 >
                   {plan.audience}
                 </p>
                 <p
                   className={`text-sm font-semibold uppercase tracking-wide ${
-                    plan.highlighted
-                      ? textTone(plan.accent, "eyebrow")
-                      : "text-green-700 dark:text-green-300"
+                    plan.highlighted ? textTone("eyebrow") : "text-green-700 dark:text-green-300"
                   }`}
                 >
                   {plan.name}
                 </p>
-                <p className={`mt-1 text-3xl font-bold ${plan.highlighted ? "text-white" : "text-gray-900 dark:text-white"}`}>
+                <p
+                  className={`mt-1 text-3xl font-bold ${
+                    plan.highlighted ? "text-white" : "text-gray-900 dark:text-white"
+                  }`}
+                >
                   {plan.price}{" "}
                   <span
                     className={`text-base font-normal ${
-                      plan.highlighted ? textTone(plan.accent, "priceSub") : "text-gray-400 dark:text-gray-500"
+                      plan.highlighted ? textTone("priceSub") : "text-gray-400 dark:text-gray-500"
                     }`}
                   >
                     FCFA / mois
                   </span>
                 </p>
-                <p className={`mt-2 font-semibold ${plan.highlighted ? "text-white" : "text-gray-800 dark:text-gray-100"}`}>
+                <p
+                  className={`mt-2 font-semibold ${
+                    plan.highlighted ? "text-white" : "text-gray-800 dark:text-gray-100"
+                  }`}
+                >
                   {plan.tagline}
                 </p>
-                <p className={`mt-1 text-sm ${plan.highlighted ? textTone(plan.accent, "body") : "text-gray-500 dark:text-gray-400"}`}>
+                <p
+                  className={`mt-1 text-sm ${
+                    plan.highlighted ? textTone("body") : "text-gray-500 dark:text-gray-400"
+                  }`}
+                >
                   {plan.description}
                 </p>
                 <div
                   className={`mt-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
                     plan.highlighted
-                      ? textTone(plan.accent, "pill")
+                      ? textTone("pill")
                       : "bg-green-50 text-green-700 dark:bg-green-500/15 dark:text-green-300"
                   }`}
                 >
-                  {plan.aiLabel}
+                  {plan.label}
                 </div>
               </div>
 
@@ -194,10 +190,10 @@ export default function Pricing() {
                   <li
                     key={feature}
                     className={`flex items-start gap-2 text-sm ${
-                      plan.highlighted ? textTone(plan.accent, "body") : "text-gray-600 dark:text-gray-300"
+                      plan.highlighted ? textTone("body") : "text-gray-600 dark:text-gray-300"
                     }`}
                   >
-                    <span className={`mt-0.5 ${plan.highlighted ? textTone(plan.accent, "bullet") : "text-green-600"}`}>
+                    <span className={`mt-0.5 ${plan.highlighted ? textTone("bullet") : "text-green-600"}`}>
                       +
                     </span>
                     {feature}
@@ -209,9 +205,7 @@ export default function Pricing() {
                 href="#contact"
                 className={`mt-6 block rounded-xl px-5 py-3 text-center text-sm font-semibold transition-colors ${
                   plan.highlighted
-                    ? plan.accent === "business"
-                      ? "bg-amber-400 text-slate-950 hover:bg-amber-300"
-                      : "bg-white text-green-700 hover:bg-green-50"
+                    ? "bg-white text-green-700 hover:bg-green-50"
                     : "border border-green-700 text-green-700 hover:bg-green-50 dark:border-green-400 dark:text-green-300 dark:hover:bg-white/5"
                 }`}
               >

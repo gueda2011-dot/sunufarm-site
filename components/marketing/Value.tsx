@@ -1,39 +1,39 @@
 const values = [
   {
     icon: "01",
-    title: "Sachez rapidement si un lot est rentable",
+    title: "Saisissez vite ce qui se passe sur le terrain",
     description:
-      "Reliez lots, achats, ventes, charges et indicateurs pour voir plus clairement ce qui rapporte et ce qui doit être corrigé.",
+      "Le suivi journalier reste simple a tenir, pour ne pas ajouter de friction aux operations quotidiennes.",
   },
   {
     icon: "02",
-    title: "Détectez plus vite les problèmes importants",
+    title: "Voyez si un lot gagne ou perd de l'argent",
     description:
-      "La plateforme aide à repérer les écarts sur la mortalité, la consommation, les traitements ou les coûts avant qu'ils ne pèsent trop lourd.",
+      "La rentabilite par lot donne une lecture concrete de la performance, pas juste une accumulation de chiffres.",
   },
   {
     icon: "03",
-    title: "Décidez avec plus de confiance",
+    title: "Vendez avec un prix minimum plus clair",
     description:
-      "Vous arbitrez mieux quand les informations terrain, les dépenses et les résultats sont enfin lisibles au même endroit.",
+      "Le seuil de vente vous aide a arbitrer avec plus de securite quand il faut negocier ou planifier une sortie.",
   },
   {
     icon: "04",
-    title: "Centralisez les données utiles à l'exploitation",
+    title: "Reperez plus vite une derive importante",
     description:
-      "Fermes, bâtiments, lots, stock, ventes, fournisseurs et finances restent reliés dans une même base simple à exploiter.",
+      "Les alertes intelligentes font remonter les points de vigilance qui meritent une reaction rapide.",
   },
   {
     icon: "05",
-    title: "Travaillez mieux avec votre équipe",
+    title: "Passez a l'action depuis l'alerte",
     description:
-      "Le propriétaire garde la main, les accès sont mieux organisés et chacun voit ce qu'il doit saisir ou suivre.",
+      "Ouvrez directement le lot, le report ou l'ecran utile pour corriger la situation sans perdre de temps.",
   },
   {
     icon: "06",
-    title: "Ajoutez de l'analyse quand elle aide vraiment",
+    title: "Gardez une organisation nette quand vous grandissez",
     description:
-      "L'IA de SunuFarm sert à faire ressortir des points d'attention concrets pour accélérer la lecture, pas pour compliquer le pilotage.",
+      "Multi-fermes, equipe et roles permettent d'etendre le pilotage sans casser la simplicite d'usage.",
   },
 ];
 
@@ -43,26 +43,26 @@ export default function Value() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Ce que SunuFarm change pour vous
+            Les vraies forces a mettre en avant
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Des bénéfices concrets pour mieux piloter, mieux réagir et mieux lire
-            la performance de votre exploitation.
+            SunuFarm n&apos;est pas un simple outil de saisie. Sa valeur est d&apos;aider a
+            decider, detecter une derive et agir avec des chiffres lisibles.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-amber-50 p-6 dark:border-white/10 dark:from-[#0f1b15] dark:via-[#0d1712] dark:to-[#19160f] md:p-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-              Pilotage plus clair
+              Decision economique
             </p>
             <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white">
-              Moins de gestion dispersée, plus de visibilité sur ce qui compte vraiment.
+              Moins de saisie pour la saisie. Plus de lecture utile pour agir.
             </h3>
             <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 md:text-base">
-              SunuFarm ne sert pas seulement à saisir des données. La plateforme
-              vous aide à transformer vos informations terrain en décisions plus
-              rapides, plus fiables et plus utiles pour la rentabilité.
+              La plateforme transforme les informations du terrain en decisions economiques
+              plus rapides: savoir si un lot reste rentable, detecter une derive, ajuster le
+              prix de vente et partager la bonne information a la bonne personne.
             </p>
           </div>
         </div>

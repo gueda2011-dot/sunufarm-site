@@ -2,52 +2,51 @@ const groups = [
   {
     category: "Terrain",
     items: [
-      { name: "Lots d'elevage", desc: "Suivi complet du cycle, de l'entree a la cloture" },
-      { name: "Saisie journaliere", desc: "Mortalite, alimentation, eau, observations et alertes de saisie" },
-      { name: "Sante animale", desc: "Vaccinations, traitements et suivi sanitaire plus lisible" },
+      { name: "Saisie journaliere simple", desc: "Mortalite, alimentation, eau et observations en quelques gestes" },
+      { name: "Lots et fermes", desc: "Chaque lot reste rattache a la bonne ferme et a son historique" },
+      { name: "Usage terrain", desc: "Parcours concu pour mobile et ordinateur, sans complexite inutile" },
     ],
   },
   {
-    category: "Stock & Finances",
+    category: "Decision economique",
     items: [
-      { name: "Stock aliments & medicaments", desc: "Articles, mouvements, sorties terrain et soldes en temps reel" },
-      { name: "Achats fournisseurs", desc: "Commandes, paiements partiels, dette fournisseur et envoi au stock" },
-      { name: "Ventes & depenses", desc: "Flux financiers relies aux lots pour mieux lire la rentabilite" },
+      { name: "Rentabilite par lot", desc: "Voyez ce que chaque lot rapporte vraiment" },
+      { name: "Prix minimum de vente", desc: "Calculez un seuil de vente coherent avec vos charges" },
+      { name: "Reports", desc: "Suivez vos chiffres sans reconstruire vos tableaux a la main" },
     ],
   },
   {
-    category: "Predictif",
+    category: "Alertes utiles",
     items: [
-      { name: "Prediction rupture stock", desc: "Anticipez les articles qui approchent d'une rupture" },
-      { name: "Prediction risque mortalite", desc: "Reperez plus vite les lots qui se degradent" },
-      { name: "Projection marge finale", desc: "Voyez quels lots menacent la rentabilite avant la fin du cycle" },
+      { name: "Alertes intelligentes", desc: "Reperez plus vite une derive qui merite une action" },
+      { name: "Actions immediates", desc: "Depuis l'alerte, ouvrez le lot ou le report utile sans detour" },
+      { name: "Priorisation simple", desc: "L'application aide a savoir quoi traiter d'abord" },
     ],
   },
   {
-    category: "Pilotage Business",
+    category: "Organisation",
     items: [
-      { name: "Vue exploitation consolidee", desc: "Lecture dirigeant des marges, risques et stocks critiques" },
-      { name: "Gestion des equipes", desc: "Roles, modules et droits d'acces adaptes a l'organisation" },
-      { name: "Offline, PWA & push", desc: "Travail terrain plus robuste sur mobile, meme quand le reseau tombe" },
+      { name: "Multi-fermes", desc: "Gardez une structure claire quand l'activite grandit" },
+      { name: "Equipe et roles", desc: "Chaque membre voit ce qu'il doit saisir ou suivre" },
+      { name: "FREE a BUSINESS", desc: "Une progression simple selon votre niveau de pilotage" },
     ],
   },
 ];
 
 export default function Modules() {
   return (
-    <section className="bg-gray-50 px-5 py-14 dark:bg-[#0a1410] md:py-20">
+    <section id="features" className="bg-gray-50 px-5 py-14 dark:bg-[#0a1410] md:py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <span className="inline-flex rounded-full bg-green-100 px-4 py-1 text-sm font-semibold text-green-700 dark:bg-green-500/15 dark:text-green-300">
-            Plateforme deja operationnelle
+            Disponible aujourd&apos;hui
           </span>
           <h2 className="mt-4 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Une application qui va du terrain jusqu&apos;au pilotage global
+            Ce que SunuFarm permet vraiment aujourd&apos;hui
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
-            SunuFarm ne s&apos;arrete pas a la saisie. La plateforme relie operations terrain,
-            stock, finances, predictions et lecture dirigeant pour aider a mieux piloter
-            l&apos;exploitation.
+            Le produit ne se limite pas a enregistrer des donnees. Il aide a lire vos chiffres,
+            detecter une derive et passer a l&apos;action sans compliquer le travail terrain.
           </p>
         </div>
 
@@ -79,8 +78,8 @@ export default function Modules() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
             "Application disponible maintenant",
-            "Acces mobile et ordinateur",
-            "Mode hors ligne sur flux terrain critiques",
+            "WhatsApp pour parler pricing ou demo",
+            "Plans clairs selon la maturite de l'exploitation",
           ].map((item) => (
             <span
               key={item}

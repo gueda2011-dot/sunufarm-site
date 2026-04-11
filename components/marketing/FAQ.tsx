@@ -6,37 +6,37 @@ const faqs = [
   {
     question: "A qui s'adresse SunuFarm ?",
     answer:
-      "SunuFarm s'adresse aux eleveurs avicoles, aux exploitations en croissance et aux structures plus organisees qui veulent mieux piloter les operations, les couts, le stock, les equipes et la rentabilite.",
+      "SunuFarm s'adresse aux elevages avicoles qui veulent aller au-dela de la simple saisie: petites fermes, exploitations en croissance et structures multi-fermes.",
   },
   {
     question: "Que permet SunuFarm aujourd'hui ?",
     answer:
-      "La plateforme couvre deja les besoins terrain et de pilotage : fermes, batiments, lots, saisie journaliere, sante, stock aliments et medicaments, achats fournisseurs, ventes, depenses, finances, rapports, equipe, alertes push et lecture Business consolidee.",
+      "La plateforme couvre deja la saisie journaliere simple, la rentabilite par lot, le prix minimum de vente, les alertes intelligentes, les actions immediates depuis les alertes, les reports, le multi-fermes et la gestion equipe / roles selon la formule.",
   },
   {
-    question: "Quelles fonctions predictives sont deja disponibles ?",
+    question: "SunuFarm sert-il seulement a saisir des donnees ?",
     answer:
-      "SunuFarm propose deja trois axes predictifs utiles : prediction de rupture stock, prediction du risque mortalite sur 7 jours et projection de la marge finale d'un lot. Ces signaux sont disponibles dans Pro et Business.",
+      "Non. La saisie n'est que la base. La vraie valeur est dans la lecture economique par lot, les alertes intelligentes, les reports et la capacite a agir vite sur ce qui derape.",
   },
   {
-    question: "Que change Business par rapport a Pro ?",
+    question: "Que trouve-t-on dans PRO ?",
     answer:
-      "Pro aide surtout a piloter lot par lot. Business ajoute une vraie vue globale exploitation avec signaux prioritaires, recommandations dirigeant, export Business consolide, multi-fermes, equipe et pilotage transverse.",
+      "PRO est la formule cle pour piloter la rentabilite: bilans par lot, prix minimum de vente, alertes intelligentes, actions immediates depuis l'alerte et reports de pilotage.",
   },
   {
-    question: "SunuFarm fonctionne-t-il bien sur mobile ?",
+    question: "Que change BUSINESS par rapport a PRO ?",
     answer:
-      "Oui. L'application est pensee pour le terrain, avec acces navigateur mobile, installation PWA, alertes push et un premier niveau de travail hors ligne avec resynchronisation sur les flux critiques.",
+      "BUSINESS ajoute surtout l'organisation a plus grande echelle: multi-fermes, equipe, roles et une lecture consolidee adaptee aux structures plus organisees.",
   },
   {
-    question: "Peut-on gerer plusieurs utilisateurs ?",
+    question: "Peut-on commencer en FREE puis evoluer ?",
     answer:
-      "Oui. Le proprietaire peut organiser l'acces des membres de l'equipe, ajuster les modules visibles selon les roles et restreindre les droits par ferme si besoin. C'est particulierement utile avec Business.",
+      "Oui. La logique de l'offre est progressive: FREE pour decouvrir, STARTER pour structurer, PRO pour piloter economiquement et BUSINESS pour coordonner a plus grande echelle.",
   },
   {
-    question: "Puis-je changer de formule plus tard ?",
+    question: "Peut-on vous parler directement sur WhatsApp ?",
     answer:
-      "Oui. Vous pouvez commencer avec Basic a 3 000 FCFA, passer a Pro pour mieux piloter vos lots, puis evoluer vers Business quand l'exploitation gagne en volume, en equipe ou en exigence de pilotage global.",
+      "Oui. Le site met en avant un CTA WhatsApp pour discuter rapidement de votre contexte, du pricing et de la formule la plus adaptee.",
   },
 ];
 

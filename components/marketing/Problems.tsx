@@ -1,33 +1,33 @@
 const problems = [
   {
     icon: "01",
-    title: "Des pertes qui ne sont pas visibles assez tôt",
+    title: "On saisit beaucoup, mais on decide encore a l'aveugle",
     description:
-      "Mortalité, consommation, santé ou coût aliment dérapent parfois sans signal clair, jusqu'à ce que la marge soit déjà abîmée.",
+      "Quand les chiffres restent disperses, la saisie seule ne suffit pas a dire si un lot va bien ou si l'argent part dans la mauvaise direction.",
   },
   {
     icon: "02",
-    title: "Une rentabilité qu'on découvre trop tard",
+    title: "Les derives sont souvent vues trop tard",
     description:
-      "Sans lecture par lot ou par période, il devient difficile de savoir ce qui rapporte vraiment et ce qui vous fait perdre.",
+      "Une hausse de charges, une baisse de performance ou un ecart de mortalite peuvent grignoter la marge avant meme d'etre traites.",
   },
   {
     icon: "03",
-    title: "Une gestion dispersée entre plusieurs supports",
+    title: "Le prix minimum de vente reste flou",
     description:
-      "Cahiers, messages, feuilles Excel et mémoire des équipes finissent par ralentir le suivi et faire perdre des informations utiles.",
+      "Sans lecture economique par lot, il est difficile de savoir a quel prix vendre pour proteger la rentabilite.",
   },
   {
     icon: "04",
-    title: "Des décisions prises trop tard",
+    title: "Les reports prennent du temps a reconstruire",
     description:
-      "Quand les données arrivent en retard ou restent floues, il est plus dur d'agir vite sur un lot, un stock ou une dépense.",
+      "Quand il faut recroiser cahiers, messages et fichiers, la vue d'ensemble arrive trop tard pour arbitrer sereinement.",
   },
   {
     icon: "05",
-    title: "Une équipe sans cadre commun",
+    title: "La croissance complique l'organisation",
     description:
-      "Quand plusieurs personnes interviennent, chacun travaille à sa façon et les accès sont rarement bien organisés.",
+      "Desormais il faut coordonner plusieurs fermes, plusieurs responsables et des droits differents, sans perdre la simplicite terrain.",
   },
 ];
 
@@ -37,12 +37,11 @@ export default function Problems() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Les freins qui coûtent cher à une exploitation avicole
+            Le vrai probleme n&apos;est pas la saisie. C&apos;est la lecture economique au bon moment.
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            Quand les pertes, les coûts et les informations restent flous, il
-            devient difficile de piloter sereinement. SunuFarm aide à remettre de
-            la visibilité là où les décisions se jouent.
+            Une exploitation avicole perd du temps et de l&apos;argent quand les chiffres
+            existent mais ne debouchent pas sur une decision claire, rapide et partagee.
           </p>
         </div>
 
