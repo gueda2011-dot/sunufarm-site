@@ -25,28 +25,28 @@ export default function AppMockup() {
                 </div>
                 <div>
                   <p className="text-base font-bold text-sky-600">J+18</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">Age</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500">Âge</p>
                 </div>
                 <div>
                   <p className="text-base font-bold text-red-500">1,2%</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">Mortalite</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500">Mortalité</p>
                 </div>
               </div>
             </div>
 
             <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm dark:border-white/10 dark:bg-[#101c16]">
               <p className="mb-2 text-xs font-semibold text-gray-700 dark:text-gray-200">
-                Lecture economique du lot
+                Lecture économique du lot
               </p>
               <div className="grid grid-cols-2 gap-2">
                 <div className="rounded-lg bg-gray-50 px-3 py-2 dark:bg-white/5">
-                  <p className="text-[11px] text-gray-400 dark:text-gray-500">Rentabilite a date</p>
+                  <p className="text-[11px] text-gray-400 dark:text-gray-500">Rentabilité à date</p>
                   <p className="mt-1 text-sm font-bold text-gray-900 dark:text-white">+187 000 FCFA</p>
                 </div>
                 <div className="rounded-lg bg-gray-50 px-3 py-2 dark:bg-white/5">
                   <p className="text-[11px] text-gray-400 dark:text-gray-500">Prix minimum de vente</p>
                   <p className="mt-1 text-sm font-bold text-amber-700 dark:text-amber-300">
-                    2 150 FCFA / tete
+                    2 150 FCFA / tête
                   </p>
                 </div>
               </div>
@@ -54,9 +54,9 @@ export default function AppMockup() {
 
             <div className="rounded-xl bg-green-700 p-3">
               <p className="mb-1 text-xs text-green-200">Report du jour</p>
-              <p className="text-xl font-bold text-white">3 alertes a traiter</p>
+              <p className="text-xl font-bold text-white">3 alertes à traiter</p>
               <p className="mt-0.5 text-xs text-green-300">
-                1 lot a surveiller, 1 prix a recalculer, 1 vente a confirmer
+                1 lot à surveiller, 1 prix à recalculer, 1 vente à confirmer
               </p>
             </div>
 
@@ -70,11 +70,11 @@ export default function AppMockup() {
                 </span>
               </div>
               <p className="mt-2 text-sm font-semibold text-gray-900 dark:text-white">
-                Prix minimum a recalculer avant la prochaine vente
+                Prix minimum à recalculer avant la prochaine vente
               </p>
               <p className="mt-1 text-xs text-gray-600 dark:text-gray-300">
-                Les charges du lot ont augmente. Mettez a jour le prix cible ou ouvrez le
-                report pour verifier la marge.
+                Les charges du lot ont augmenté. Mettez à jour le prix cible ou ouvrez le
+                report pour vérifier la marge.
               </p>
               <div className="mt-3 flex gap-2">
                 <span className="rounded-lg bg-white px-2.5 py-1 text-[11px] font-semibold text-amber-900 shadow-sm">

@@ -18,20 +18,20 @@ export default function Hero() {
             </div>
 
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-              Passez de la saisie terrain a la decision economique
+              Passez de la saisie terrain à la décision économique
             </h1>
 
             <p className="mt-5 text-lg text-gray-600 dark:text-gray-300">
-              SunuFarm aide les elevages avicoles a saisir simplement le quotidien, voir la
-              rentabilite par lot, calculer le prix minimum de vente, recevoir des alertes
+              SunuFarm aide les élevages avicoles à saisir simplement le quotidien, voir la
+              rentabilité par lot, calculer le prix minimum de vente, recevoir des alertes
               intelligentes et agir tout de suite depuis l&apos;application.
             </p>
 
             <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
               {[
-                "Saisie journaliere simple pour chaque lot",
-                "Rentabilite par lot et prix minimum de vente",
-                "Alertes intelligentes avec actions immediates",
+                "Saisie journalière simple pour chaque lot",
+                "Rentabilité par lot et prix minimum de vente",
+                "Alertes intelligentes avec actions immédiates",
               ].map((item) => (
                 <div
                   key={item}
@@ -62,7 +62,7 @@ export default function Hero() {
             <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
               {[
                 "Reports clairs pour suivre vos lots",
-                "Multi-fermes et equipe selon votre formule",
+                "Multi-fermes et équipe selon votre formule",
                 "Parcours simple sur mobile et ordinateur",
               ].map((item) => (
                 <span

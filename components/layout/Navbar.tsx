@@ -5,8 +5,8 @@ import ThemeToggle from "./ThemeToggle";
 import BrandLogo from "./BrandLogo";
 
 const links = [
-  { label: "Problemes", href: "#problems" },
-  { label: "Fonctionnalites", href: "#features" },
+  { label: "Problèmes", href: "#problems" },
+  { label: "Fonctionnalités", href: "#features" },
   { label: "Valeur", href: "#value" },
   { label: "Tarifs", href: "#pricing" },
   { label: "FAQ", href: "#faq" },

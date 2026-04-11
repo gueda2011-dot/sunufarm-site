@@ -2,17 +2,17 @@ const plans = [
   {
     name: "FREE",
     price: "0",
-    tagline: "Decouvrez SunuFarm et lancez un premier suivi",
+    tagline: "Découvrez SunuFarm et lancez un premier suivi",
     description:
-      "Pour tester le mode de travail SunuFarm et sortir du suivi trop disperse.",
+      "Pour tester le mode de travail SunuFarm et sortir du suivi trop dispersé.",
     features: [
-      "1 ferme de demarrage",
-      "Lots et saisie journaliere simple",
-      "Acces mobile et ordinateur",
-      "Lecture de base pour decouvrir l'app",
+      "1 ferme de démarrage",
+      "Lots et saisie journalière simple",
+      "Accès mobile et ordinateur",
+      "Lecture de base pour découvrir l'app",
     ],
     cta: "Commencer en Free",
-    audience: "Pour decouvrir le produit",
+    audience: "Pour découvrir le produit",
     label: "Base simple",
     highlighted: false,
   },
@@ -21,13 +21,13 @@ const plans = [
     price: "3 000",
     tagline: "Structurez une ferme avec des chiffres propres",
     description:
-      "Pour passer d'une gestion approximative a une base claire, exploitable et suivie dans le temps.",
+      "Pour passer d'une gestion approximative à une base claire, exploitable et suivie dans le temps.",
     features: [
       "Tout ce qui est dans FREE",
-      "Charges, ventes et depenses",
+      "Charges, ventes et dépenses",
       "Reports essentiels",
       "Historique plus fiable",
-      "Premiere organisation de l'exploitation",
+      "Première organisation de l'exploitation",
     ],
     cta: "Passer en Starter",
     audience: "Pour poser la base",
@@ -37,38 +37,38 @@ const plans = [
   {
     name: "PRO",
     price: "10 000",
-    tagline: "Pilotez la rentabilite lot par lot",
+    tagline: "Pilotez la rentabilité lot par lot",
     description:
-      "Pour les exploitations qui veulent decider avec des chiffres economiques clairs et reagir plus vite.",
+      "Pour les exploitations qui veulent décider avec des chiffres économiques clairs et réagir plus vite.",
     features: [
       "Tout ce qui est dans STARTER",
-      "Bilans de rentabilite par lot",
+      "Bilans de rentabilité par lot",
       "Prix minimum de vente",
       "Alertes intelligentes",
-      "Actions immediates depuis les alertes",
+      "Actions immédiates depuis les alertes",
       "Reports de pilotage",
     ],
     cta: "Choisir Pro",
     audience: "Le plan central",
-    label: "Decision economique",
+    label: "Décision économique",
     highlighted: true,
-    badge: "Recommande",
+    badge: "Recommandé",
   },
   {
     name: "BUSINESS",
     price: "25 000",
-    tagline: "Coordonnez plusieurs fermes et plusieurs roles",
+    tagline: "Coordonnez plusieurs fermes et plusieurs rôles",
     description:
-      "Pour les structures qui ont besoin d'un pilotage transverse, d'une equipe organisee et d'une lecture consolidee.",
+      "Pour les structures qui ont besoin d'un pilotage transverse, d'une équipe organisée et d'une lecture consolidée.",
     features: [
       "Tout ce qui est dans PRO",
       "Multi-fermes",
-      "Equipe et roles",
-      "Lecture consolidee de l'activite",
-      "Reports adaptes aux structures organisees",
+      "Équipe et rôles",
+      "Lecture consolidée de l'activité",
+      "Reports adaptés aux structures organisées",
     ],
     cta: "Choisir Business",
-    audience: "Pour les operations plus structurees",
+    audience: "Pour les opérations plus structurées",
     label: "Pilotage multi-fermes",
     highlighted: false,
   },
@@ -107,13 +107,13 @@ export default function Pricing() {
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
             Vous pouvez commencer gratuitement, structurer une ferme, passer au pilotage
-            economique par lot, puis organiser plusieurs fermes et plusieurs roles.
+            économique par lot, puis organiser plusieurs fermes et plusieurs rôles.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-amber-100 bg-amber-50 px-5 py-4 text-sm text-amber-900 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-200">
-          Le coeur de la valeur se situe dans PRO: rentabilite par lot, prix minimum de vente,
-          alertes intelligentes et actions immediates. BUSINESS etend ensuite ce pilotage a
+          Le cœur de la valeur se situe dans PRO: rentabilité par lot, prix minimum de vente,
+          alertes intelligentes et actions immédiates. BUSINESS étend ensuite ce pilotage à
           une organisation plus large.
         </div>
 

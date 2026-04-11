@@ -3,37 +3,37 @@ const values = [
     icon: "01",
     title: "Saisissez vite ce qui se passe sur le terrain",
     description:
-      "Le suivi journalier reste simple a tenir, pour ne pas ajouter de friction aux operations quotidiennes.",
+      "Le suivi journalier reste simple à tenir, pour ne pas ajouter de friction aux opérations quotidiennes.",
   },
   {
     icon: "02",
-    title: "Voyez si un lot gagne ou perd de l'argent",
+    title: "Voyez si un lot gagne ou perd de l’argent",
     description:
-      "La rentabilite par lot donne une lecture concrete de la performance, pas juste une accumulation de chiffres.",
+      "La rentabilité par lot donne une lecture concrète de la performance, pas juste une accumulation de chiffres.",
   },
   {
     icon: "03",
     title: "Vendez avec un prix minimum plus clair",
     description:
-      "Le seuil de vente vous aide a arbitrer avec plus de securite quand il faut negocier ou planifier une sortie.",
+      "Le seuil de vente vous aide à arbitrer avec plus de sécurité quand il faut négocier ou planifier une sortie.",
   },
   {
     icon: "04",
-    title: "Reperez plus vite une derive importante",
+    title: "Repérez plus vite une dérive importante",
     description:
-      "Les alertes intelligentes font remonter les points de vigilance qui meritent une reaction rapide.",
+      "Les alertes intelligentes font remonter les points de vigilance qui méritent une réaction rapide.",
   },
   {
     icon: "05",
-    title: "Passez a l'action depuis l'alerte",
+    title: "Passez à l'action depuis l'alerte",
     description:
-      "Ouvrez directement le lot, le report ou l'ecran utile pour corriger la situation sans perdre de temps.",
+      "Ouvrez directement le lot, le report ou l'écran utile pour corriger la situation sans perdre de temps.",
   },
   {
     icon: "06",
     title: "Gardez une organisation nette quand vous grandissez",
     description:
-      "Multi-fermes, equipe et roles permettent d'etendre le pilotage sans casser la simplicite d'usage.",
+      "Multi-fermes, équipe et rôles permettent d'étendre le pilotage sans casser la simplicité d'usage.",
   },
 ];
 
@@ -43,26 +43,26 @@ export default function Value() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Les vraies forces a mettre en avant
+            Les vraies forces à mettre en avant
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
-            SunuFarm n&apos;est pas un simple outil de saisie. Sa valeur est d&apos;aider a
-            decider, detecter une derive et agir avec des chiffres lisibles.
+            SunuFarm n&apos;est pas un simple outil de saisie. Sa valeur est d&apos;aider à
+            décider, détecter une dérive et agir avec des chiffres lisibles.
           </p>
         </div>
 
         <div className="mb-8 rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-amber-50 p-6 dark:border-white/10 dark:from-[#0f1b15] dark:via-[#0d1712] dark:to-[#19160f] md:p-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green-700 dark:text-green-300">
-              Decision economique
+              Décision économique
             </p>
             <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white">
               Moins de saisie pour la saisie. Plus de lecture utile pour agir.
             </h3>
             <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 md:text-base">
-              La plateforme transforme les informations du terrain en decisions economiques
-              plus rapides: savoir si un lot reste rentable, detecter une derive, ajuster le
-              prix de vente et partager la bonne information a la bonne personne.
+              La plateforme transforme les informations du terrain en décisions économiques
+              plus rapides: savoir si un lot reste rentable, détecter une dérive, ajuster le
+              prix de vente et partager la bonne information à la bonne personne.
             </p>
           </div>
         </div>

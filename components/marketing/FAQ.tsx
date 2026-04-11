@@ -6,37 +6,37 @@ const faqs = [
   {
     question: "A qui s'adresse SunuFarm ?",
     answer:
-      "SunuFarm s'adresse aux elevages avicoles qui veulent aller au-dela de la simple saisie: petites fermes, exploitations en croissance et structures multi-fermes.",
+      "SunuFarm s'adresse aux élevages avicoles qui veulent aller au-delà de la simple saisie: petites fermes, exploitations en croissance et structures multi-fermes.",
   },
   {
     question: "Que permet SunuFarm aujourd'hui ?",
     answer:
-      "La plateforme couvre deja la saisie journaliere simple, la rentabilite par lot, le prix minimum de vente, les alertes intelligentes, les actions immediates depuis les alertes, les reports, le multi-fermes et la gestion equipe / roles selon la formule.",
+      "La plateforme couvre déjà la saisie journalière simple, la rentabilité par lot, le prix minimum de vente, les alertes intelligentes, les actions immédiates depuis les alertes, les reports, le multi-fermes et la gestion équipe / rôles selon la formule.",
   },
   {
-    question: "SunuFarm sert-il seulement a saisir des donnees ?",
+    question: "SunuFarm sert-il seulement à saisir des données ?",
     answer:
-      "Non. La saisie n'est que la base. La vraie valeur est dans la lecture economique par lot, les alertes intelligentes, les reports et la capacite a agir vite sur ce qui derape.",
+      "Non. La saisie n'est que la base. La vraie valeur est dans la lecture économique par lot, les alertes intelligentes, les reports et la capacité à agir vite sur ce qui dérape.",
   },
   {
     question: "Que trouve-t-on dans PRO ?",
     answer:
-      "PRO est la formule cle pour piloter la rentabilite: bilans par lot, prix minimum de vente, alertes intelligentes, actions immediates depuis l'alerte et reports de pilotage.",
+      "PRO est la formule clé pour piloter la rentabilité: bilans par lot, prix minimum de vente, alertes intelligentes, actions immédiates depuis l'alerte et reports de pilotage.",
   },
   {
-    question: "Que change BUSINESS par rapport a PRO ?",
+    question: "Que change BUSINESS par rapport à PRO ?",
     answer:
-      "BUSINESS ajoute surtout l'organisation a plus grande echelle: multi-fermes, equipe, roles et une lecture consolidee adaptee aux structures plus organisees.",
+      "BUSINESS ajoute surtout l'organisation à plus grande échelle: multi-fermes, équipe, rôles et une lecture consolidée adaptée aux structures plus organisées.",
   },
   {
-    question: "Peut-on commencer en FREE puis evoluer ?",
+    question: "Peut-on commencer en FREE puis évoluer ?",
     answer:
-      "Oui. La logique de l'offre est progressive: FREE pour decouvrir, STARTER pour structurer, PRO pour piloter economiquement et BUSINESS pour coordonner a plus grande echelle.",
+      "Oui. La logique de l'offre est progressive: FREE pour découvrir, STARTER pour structurer, PRO pour piloter économiquement et BUSINESS pour coordonner à plus grande échelle.",
   },
   {
     question: "Peut-on vous parler directement sur WhatsApp ?",
     answer:
-      "Oui. Le site met en avant un CTA WhatsApp pour discuter rapidement de votre contexte, du pricing et de la formule la plus adaptee.",
+      "Oui. Le site met en avant un CTA WhatsApp pour discuter rapidement de votre contexte, du pricing et de la formule la plus adaptée.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Questions frequentes
+            Questions fréquentes
           </h2>
         </div>
 

@@ -2,33 +2,33 @@ const groups = [
   {
     category: "Terrain",
     items: [
-      { name: "Saisie journaliere simple", desc: "Mortalite, alimentation, eau et observations en quelques gestes" },
-      { name: "Lots et fermes", desc: "Chaque lot reste rattache a la bonne ferme et a son historique" },
-      { name: "Usage terrain", desc: "Parcours concu pour mobile et ordinateur, sans complexite inutile" },
+      { name: "Saisie journalière simple", desc: "Mortalité, alimentation, eau et observations en quelques gestes" },
+      { name: "Lots et fermes", desc: "Chaque lot reste rattaché à la bonne ferme et à son historique" },
+      { name: "Usage terrain", desc: "Parcours conçu pour mobile et ordinateur, sans complexité inutile" },
     ],
   },
   {
-    category: "Decision economique",
+    category: "Décision économique",
     items: [
-      { name: "Rentabilite par lot", desc: "Voyez ce que chaque lot rapporte vraiment" },
-      { name: "Prix minimum de vente", desc: "Calculez un seuil de vente coherent avec vos charges" },
-      { name: "Reports", desc: "Suivez vos chiffres sans reconstruire vos tableaux a la main" },
+      { name: "Rentabilité par lot", desc: "Voyez ce que chaque lot rapporte vraiment" },
+      { name: "Prix minimum de vente", desc: "Calculez un seuil de vente cohérent avec vos charges" },
+      { name: "Reports", desc: "Suivez vos chiffres sans reconstruire vos tableaux à la main" },
     ],
   },
   {
     category: "Alertes utiles",
     items: [
-      { name: "Alertes intelligentes", desc: "Reperez plus vite une derive qui merite une action" },
-      { name: "Actions immediates", desc: "Depuis l'alerte, ouvrez le lot ou le report utile sans detour" },
-      { name: "Priorisation simple", desc: "L'application aide a savoir quoi traiter d'abord" },
+      { name: "Alertes intelligentes", desc: "Repérez plus vite une dérive qui mérite une action" },
+      { name: "Actions immédiates", desc: "Depuis l'alerte, ouvrez le lot ou le report utile sans détour" },
+      { name: "Priorisation simple", desc: "L'application aide à savoir quoi traiter d'abord" },
     ],
   },
   {
     category: "Organisation",
     items: [
-      { name: "Multi-fermes", desc: "Gardez une structure claire quand l'activite grandit" },
-      { name: "Equipe et roles", desc: "Chaque membre voit ce qu'il doit saisir ou suivre" },
-      { name: "FREE a BUSINESS", desc: "Une progression simple selon votre niveau de pilotage" },
+      { name: "Multi-fermes", desc: "Gardez une structure claire quand l'activité grandit" },
+      { name: "Équipe et rôles", desc: "Chaque membre voit ce qu'il doit saisir ou suivre" },
+      { name: "FREE à BUSINESS", desc: "Une progression simple selon votre niveau de pilotage" },
     ],
   },
 ];
@@ -45,8 +45,8 @@ export default function Modules() {
             Ce que SunuFarm permet vraiment aujourd&apos;hui
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-500 dark:text-gray-400">
-            Le produit ne se limite pas a enregistrer des donnees. Il aide a lire vos chiffres,
-            detecter une derive et passer a l&apos;action sans compliquer le travail terrain.
+            Le produit ne se limite pas à enregistrer des données. Il aide à lire vos chiffres,
+            détecter une dérive et passer à l&apos;action sans compliquer le travail terrain.
           </p>
         </div>
 
@@ -78,8 +78,8 @@ export default function Modules() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
             "Application disponible maintenant",
-            "WhatsApp pour parler pricing ou demo",
-            "Plans clairs selon la maturite de l'exploitation",
+            "WhatsApp pour parler pricing ou démo",
+            "Plans clairs selon la maturité de l'exploitation",
           ].map((item) => (
             <span
               key={item}

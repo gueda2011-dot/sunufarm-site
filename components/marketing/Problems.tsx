@@ -1,21 +1,21 @@
 const problems = [
   {
     icon: "01",
-    title: "On saisit beaucoup, mais on decide encore a l'aveugle",
+    title: "On saisit beaucoup, mais on décide encore à l'aveugle",
     description:
-      "Quand les chiffres restent disperses, la saisie seule ne suffit pas a dire si un lot va bien ou si l'argent part dans la mauvaise direction.",
+      "Quand les chiffres restent dispersés, la saisie seule ne suffit pas à dire si un lot va bien ou si l'argent part dans la mauvaise direction.",
   },
   {
     icon: "02",
-    title: "Les derives sont souvent vues trop tard",
+    title: "Les dérives sont souvent vues trop tard",
     description:
-      "Une hausse de charges, une baisse de performance ou un ecart de mortalite peuvent grignoter la marge avant meme d'etre traites.",
+      "Une hausse de charges, une baisse de performance ou un écart de mortalité peuvent grignoter la marge avant même d'être traités.",
   },
   {
     icon: "03",
     title: "Le prix minimum de vente reste flou",
     description:
-      "Sans lecture economique par lot, il est difficile de savoir a quel prix vendre pour proteger la rentabilite.",
+      "Sans lecture économique par lot, il est difficile de savoir à quel prix vendre pour protéger la rentabilité.",
   },
   {
     icon: "04",
@@ -27,7 +27,7 @@ const problems = [
     icon: "05",
     title: "La croissance complique l'organisation",
     description:
-      "Desormais il faut coordonner plusieurs fermes, plusieurs responsables et des droits differents, sans perdre la simplicite terrain.",
+      "Désormais il faut coordonner plusieurs fermes, plusieurs responsables et des droits différents, sans perdre la simplicité terrain.",
   },
 ];
 
@@ -37,11 +37,11 @@ export default function Problems() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            Le vrai probleme n&apos;est pas la saisie. C&apos;est la lecture economique au bon moment.
+            Le vrai problème n&apos;est pas la saisie. C&apos;est la lecture économique au bon moment.
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-gray-500 dark:text-gray-400">
             Une exploitation avicole perd du temps et de l&apos;argent quand les chiffres
-            existent mais ne debouchent pas sur une decision claire, rapide et partagee.
+            existent mais ne débouchent pas sur une décision claire, rapide et partagée.
           </p>
         </div>
 
